@@ -19,6 +19,6 @@ linux:
   target:
     - snap
 publish: null
-electronVersion: 13.6.3
+electronVersion: 13.6.6
 extraFiles:
   - "cocoSSDModel"
