@@ -19,13 +19,18 @@ function createWindow() {
         titleBarStyle: "hidden",
         backgroundColor: "#272B30",
         show: false,
+        webPreferences: {
+            // enable require
+            contextIsolation: false,
+            nodeIntegration: true,
+            // enable remote
+            enableRemoteModule: true,
+        },
     };
 
     const staticUrl = process.env.ELECTRON_START_URL || `file:///${__dirname}/index.html`;
     if (process.env.ELECTRON_START_URL) {
-        windowOptions.webPreferences = {
-            webSecurity: false,
-        };
+        windowOptions.webPreferences.webSecurity = false;
     }
 
     mainWindow = new BrowserWindow(windowOptions);
@@ -73,7 +78,7 @@ function registerContextMenu(browserWindow: BrowserWindow): void {
     const selectionMenu = Menu.buildFromTemplate([
         { role: "copy", accelerator: "CmdOrCtrl+C" },
         { type: "separator" },
-        { role: "selectall", accelerator: "CmdOrCtrl+A" },
+        { role: "selectAll", accelerator: "CmdOrCtrl+A" },
     ]);
 
     const inputMenu = Menu.buildFromTemplate([
@@ -84,7 +89,7 @@ function registerContextMenu(browserWindow: BrowserWindow): void {
         { role: "copy", accelerator: "CmdOrCtrl+C" },
         { role: "paste", accelerator: "CmdOrCtrl+V" },
         { type: "separator" },
-        { role: "selectall", accelerator: "CmdOrCtrl+A" },
+        { role: "selectAll", accelerator: "CmdOrCtrl+A" },
     ]);
 
     browserWindow.webContents.on("context-menu", (e, props) => {
@@ -112,7 +117,7 @@ function registerContextMenu(browserWindow: BrowserWindow): void {
                 { role: "reload" },
                 { type: "separator" },
                 { role: "toggleDevTools" },
-                { role: "toggleFullScreen" },
+                { role: "togglefullscreen" },
                 { type: "separator" },
                 { role: "resetZoom" },
                 { role: "zoomIn" },
