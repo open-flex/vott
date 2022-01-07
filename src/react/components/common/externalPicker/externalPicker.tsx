@@ -1,5 +1,5 @@
 import React, { SyntheticEvent } from "react";
-import axios, { AxiosRequestConfig } from "axios";
+import axios, { AxiosRequestConfig, Method } from "axios";
 import { FieldProps } from "react-jsonschema-form";
 import { interpolate } from "../../../../common/strings";
 
@@ -18,7 +18,7 @@ interface IKeyValuePair {
  * @member authHeaderValue - Authorization header value
  */
 export interface IExternalPickerUiOptions {
-    method: string;
+    method: Method;
     url: string;
     keySelector: string;
     valueSelector: string;
