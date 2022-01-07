@@ -1,5 +1,4 @@
 
-// import { default as fetch } from 'node-fetch';
 import * as config from '../config';
 
 describe('App Server', () => {
@@ -9,5 +8,5 @@ describe('App Server', () => {
         // do nothing
         done();
     });
-    
+
 });

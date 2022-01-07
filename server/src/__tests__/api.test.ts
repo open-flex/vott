@@ -1,12 +1,11 @@
 
-// import { default as fetch } from 'node-fetch';
 import * as config from '../config';
 import { app, server } from '../app';
 import { ServerResponse } from 'http';
 
 
 beforeAll(async (done) => {
-    if (!server.listening) { 
+    if (!server.listening) {
         server.on('listening', done())
     } else {
         done();
@@ -14,7 +13,7 @@ beforeAll(async (done) => {
 });
 
 afterAll(async (done) => {
-    server.close(() => { 
+    server.close(() => {
         console.log('done');
         done();
     });
@@ -23,7 +22,7 @@ afterAll(async (done) => {
 describe('App Server', () => {
 
     afterAll(async (done) => {
-        server.close(() => { 
+        server.close(() => {
             console.log('done');
             done();
         });
