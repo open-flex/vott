@@ -27,7 +27,7 @@ export class TitleBar extends React.Component<ITitleBarProps, ITitleBarState> {
         menu: null,
     };
 
-    private menu: Menu = React.createRef();
+    private menu = React.createRef<Menu>();
     private remote: Electron.Remote;
     private currentWindow: Electron.BrowserWindow;
 
@@ -209,7 +209,7 @@ export class TitleBar extends React.Component<ITitleBarProps, ITitleBarState> {
         this.currentWindow.close();
     }
 
-    private onMenuItemSelected = (key: string, item: React.Component) => {
+    private onMenuItemSelected = () => {
         // Required to auto-close the menu after user selects an item.
         this.menu.current.store.setState({
             openKeys: [],
