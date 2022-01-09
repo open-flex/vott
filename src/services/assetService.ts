@@ -1,19 +1,18 @@
-import MD5 from "md5.js";
 import _ from "lodash";
+import MD5 from "md5.js";
 import * as shortid from "shortid";
-import Guard from "../common/guard";
-import {
-    IAsset, AssetType, IProject, IAssetMetadata, AssetState,
-    IRegion, RegionType, ITFRecordMetadata,
-} from "../models/applicationState";
-import { AssetProviderFactory, IAssetProvider } from "../providers/storage/assetProviderFactory";
-import { StorageProviderFactory, IStorageProvider } from "../providers/storage/storageProviderFactory";
-import { constants } from "../common/constants";
-import HtmlFileReader from "../common/htmlFileReader";
-import { TFRecordsReader } from "../providers/export/tensorFlowRecords/tensorFlowReader";
-import { FeatureType } from "../providers/export/tensorFlowRecords/tensorFlowBuilder";
 import { appInfo } from "../common/appInfo";
+import { constants } from "../common/constants";
+import Guard from "../common/guard";
+import HtmlFileReader from "../common/htmlFileReader";
 import { encodeFileURI } from "../common/utils";
+import {
+    AssetState, AssetType, IAsset, IAssetMetadata, IProject, IRegion, ITFRecordMetadata, RegionType
+} from "../models/applicationState";
+import { FeatureType } from "../providers/export/tensorFlowRecords/tensorFlowBuilder";
+import { TFRecordsReader } from "../providers/export/tensorFlowRecords/tensorFlowReader";
+import { AssetProviderFactory, IAssetProvider } from "../providers/storage/assetProviderFactory";
+import { IStorageProvider, StorageProviderFactory } from "../providers/storage/storageProviderFactory";
 
 /**
  * @name - Asset Service

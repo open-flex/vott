@@ -1,20 +1,20 @@
 import _ from "lodash";
 import os from "os";
-import { CntkExportProvider, ICntkExportProviderOptions } from "./cntk";
-import { IProject, AssetState, IAssetMetadata } from "../../models/applicationState";
-import { AssetProviderFactory } from "../storage/assetProviderFactory";
-import { ExportAssetState } from "./exportProvider";
+import { appInfo } from "../../common/appInfo";
+import HtmlFileReader from "../../common/htmlFileReader";
 import MockFactory from "../../common/mockFactory";
+import { AssetState, IAssetMetadata, IProject } from "../../models/applicationState";
 import registerMixins from "../../registerMixins";
 import registerProviders from "../../registerProviders";
+import { AssetService } from "../../services/assetService";
+import { AssetProviderFactory } from "../storage/assetProviderFactory";
+import { LocalFileSystemProxy } from "../storage/localFileSystemProxy";
+import { CntkExportProvider, ICntkExportProviderOptions } from "./cntk";
+import { ExportAssetState } from "./exportProvider";
 import { ExportProviderFactory } from "./exportProviderFactory";
 jest.mock("../../services/assetService");
-import { AssetService } from "../../services/assetService";
 
 jest.mock("../storage/localFileSystemProxy");
-import { LocalFileSystemProxy } from "../storage/localFileSystemProxy";
-import HtmlFileReader from "../../common/htmlFileReader";
-import { appInfo } from "../../common/appInfo";
 
 describe("CNTK Export Provider", () => {
     const testAssets = MockFactory.createTestAssets(10, 1);

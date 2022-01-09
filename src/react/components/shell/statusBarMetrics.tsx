@@ -1,7 +1,7 @@
-import React from "react";
 import _ from "lodash";
-import { IProject, AssetState } from "../../../models/applicationState";
-import { strings, interpolate } from "../../../common/strings";
+import React from "react";
+import { interpolate, strings } from "../../../common/strings";
+import { AssetState, IProject } from "../../../models/applicationState";
 
 export interface IStatusBarMetricsProps {
     project: IProject;

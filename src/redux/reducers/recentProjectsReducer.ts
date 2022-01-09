@@ -1,7 +1,6 @@
-import _ from "lodash";
-import { ActionTypes } from "../actions/actionTypes";
 import { IProject } from "../../models/applicationState";
 import { AnyAction } from "../actions/actionCreators";
+import { ActionTypes } from "../actions/actionTypes";
 
 /**
  * Reducer for recent projects. Actions handled:

@@ -1,6 +1,7 @@
-import { TFRecordsImageMessage, Features, Feature, FeatureList,
-    BytesList, Int64List, FloatList } from "./tensorFlowRecordsProtoBuf_pb";
-import { crc32c, maskCrc, getInt64Buffer, getInt32Buffer, textEncode } from "./tensorFlowHelpers";
+import { crc32c, getInt32Buffer, getInt64Buffer, maskCrc, textEncode } from "./tensorFlowHelpers";
+import {
+    BytesList, Feature, Features, FloatList, Int64List, TFRecordsImageMessage
+} from "./tensorFlowRecordsProtoBuf_pb";
 
 /**
  * @name - TFRecords Feature Type

@@ -1,6 +1,6 @@
-import MockFactory from "../mockFactory";
-import registerMixins from "../../registerMixins";
 import { IAsset } from "../../models/applicationState";
+import registerMixins from "../../registerMixins";
+import MockFactory from "../mockFactory";
 
 describe("Array Extensions", () => {
     const testArray = MockFactory.createTestAssets(100);

@@ -1,8 +1,8 @@
+import { mount, ReactWrapper } from "enzyme";
 import React from "react";
-import EditorSideBar, { IEditorSideBarProps, IEditorSideBarState } from "./editorSideBar";
-import { ReactWrapper, mount } from "enzyme";
 import { AutoSizer, List } from "react-virtualized";
 import MockFactory from "../../../../common/mockFactory";
+import EditorSideBar, { IEditorSideBarProps, IEditorSideBarState } from "./editorSideBar";
 
 describe("Editor SideBar", () => {
     const onSelectAssetHandler = jest.fn();

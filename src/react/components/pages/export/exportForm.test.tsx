@@ -1,13 +1,13 @@
-import React from "react";
-import ExportForm, { IExportFormProps, IExportFormState } from "./exportForm";
 import { mount } from "enzyme";
+import React from "react";
+import MockFactory from "../../../../common/mockFactory";
 import { IExportFormat } from "../../../../models/applicationState";
 import { ExportAssetState } from "../../../../providers/export/exportProvider";
-import MockFactory from "../../../../common/mockFactory";
-
-jest.mock("../../../../providers/export/exportProviderFactory");
 import { ExportProviderFactory } from "../../../../providers/export/exportProviderFactory";
 import { IVottJsonExportProviderOptions } from "../../../../providers/export/vottJson";
+import ExportForm, { IExportFormProps, IExportFormState } from "./exportForm";
+
+jest.mock("../../../../providers/export/exportProviderFactory");
 
 describe("Export Form Component", () => {
     const exportProviderRegistrations = MockFactory.createExportProviderRegistrations();

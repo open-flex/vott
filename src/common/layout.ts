@@ -1,5 +1,5 @@
-import { ContentSource } from "../react/components/common/assetPreview/assetPreview";
 import { IBoundingBox, ISize } from "../models/applicationState";
+import { ContentSource } from "../react/components/common/assetPreview/assetPreview";
 import Guard from "./guard";
 
 /**

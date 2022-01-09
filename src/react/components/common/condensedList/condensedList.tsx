@@ -1,6 +1,6 @@
 import React, { SyntheticEvent } from "react";
-import "./condensedList.scss";
 import { Link } from "react-router-dom";
+import "./condensedList.scss";
 
 /**
  * Properties for Condensed List Component

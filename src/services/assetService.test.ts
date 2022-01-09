@@ -1,15 +1,15 @@
-import { AssetService } from "./assetService";
-import { AssetType, IAssetMetadata, AssetState, IAsset, IProject } from "../models/applicationState";
+import _ from "lodash";
+import MD5 from "md5.js";
+import { constants } from "../common/constants";
+import HtmlFileReader from "../common/htmlFileReader";
 import MockFactory from "../common/mockFactory";
+import { encodeFileURI } from "../common/utils";
+import { AssetState, AssetType, IAsset, IAssetMetadata, IProject } from "../models/applicationState";
+import { FeatureType, TFRecordsBuilder } from "../providers/export/tensorFlowRecords/tensorFlowBuilder";
 import { AssetProviderFactory, IAssetProvider } from "../providers/storage/assetProviderFactory";
 import { StorageProviderFactory } from "../providers/storage/storageProviderFactory";
-import { constants } from "../common/constants";
-import { TFRecordsBuilder, FeatureType } from "../providers/export/tensorFlowRecords/tensorFlowBuilder";
-import HtmlFileReader from "../common/htmlFileReader";
-import { encodeFileURI } from "../common/utils";
-import _ from "lodash";
 import registerMixins from "../registerMixins";
-import MD5 from "md5.js";
+import { AssetService } from "./assetService";
 
 describe("Asset Service", () => {
     describe("Static Methods", () => {

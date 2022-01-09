@@ -1,11 +1,11 @@
+import Checkbox from "rc-checkbox";
 import React from "react";
-import Form, { ISubmitEvent, IChangeEvent, Widget } from "react-jsonschema-form";
-import { IActiveLearningSettings, ModelPathType } from "../../../../models/applicationState";
-import { strings, addLocValues } from "../../../../common/strings";
+import Form, { IChangeEvent, ISubmitEvent, Widget } from "react-jsonschema-form";
+import { addLocValues, strings } from "../../../../common/strings";
+import { IActiveLearningSettings } from "../../../../models/applicationState";
+import { CustomWidget } from "../../common/customField/customField";
 import CustomFieldTemplate from "../../common/customField/customFieldTemplate";
 import LocalFolderPicker from "../../common/localFolderPicker/localFolderPicker";
-import { CustomWidget } from "../../common/customField/customField";
-import Checkbox from "rc-checkbox";
 
 // tslint:disable-next-line:no-var-requires
 const formSchema = addLocValues(require("./activeLearningForm.json"));

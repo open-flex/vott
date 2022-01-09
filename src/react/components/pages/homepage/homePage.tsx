@@ -1,26 +1,23 @@
 import React, { SyntheticEvent } from "react";
 import { connect } from "react-redux";
 import { RouteComponentProps } from "react-router-dom";
+import { toast } from "react-toastify";
 import { bindActionCreators } from "redux";
-import { strings, interpolate } from "../../../../common/strings";
-import IProjectActions, * as projectActions from "../../../../redux/actions/projectActions";
+import { constants } from "../../../../common/constants";
+import { isElectron } from "../../../../common/hostProcess";
+import { interpolate, strings } from "../../../../common/strings";
+import {
+    AppError, ErrorCode, IApplicationState, IAppSettings, IAssetMetadata, IConnection, IFileInfo, IProject
+} from "../../../../models/applicationState";
 import IApplicationActions, * as applicationActions from "../../../../redux/actions/applicationActions";
+import IProjectActions, * as projectActions from "../../../../redux/actions/projectActions";
+import ImportService from "../../../../services/importService";
 import { CloudFilePicker } from "../../common/cloudFilePicker/cloudFilePicker";
 import CondensedList from "../../common/condensedList/condensedList";
 import Confirm from "../../common/confirm/confirm";
 import FilePicker from "../../common/filePicker/filePicker";
 import "./homePage.scss";
 import RecentProjectItem from "./recentProjectItem";
-import { constants } from "../../../../common/constants";
-import {
-    IApplicationState, IConnection, IProject, IFileInfo,
-    ErrorCode, AppError, IAppError, IAppSettings, IAsset,
-} from "../../../../models/applicationState";
-import ImportService from "../../../../services/importService";
-import { IAssetMetadata } from "../../../../models/applicationState";
-import { toast } from "react-toastify";
-import MessageBox from "../../common/messageBox/messageBox";
-import { isElectron } from "../../../../common/hostProcess";
 
 export interface IHomePageProps extends RouteComponentProps, React.Props<HomePage> {
     recentProjects: IProject[];

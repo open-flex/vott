@@ -1,9 +1,9 @@
 import React, { SyntheticEvent } from "react";
-import { IAsset, AssetType, IProjectVideoSettings } from "../../../../models/applicationState";
 import { strings } from "../../../../common/strings";
+import { AssetType, IAsset, IProjectVideoSettings } from "../../../../models/applicationState";
 import { ImageAsset } from "./imageAsset";
-import { VideoAsset } from "./videoAsset";
 import { TFRecordAsset } from "./tfrecordAsset";
+import { VideoAsset } from "./videoAsset";
 
 export interface IGenericContentSource {
     width: number;

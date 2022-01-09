@@ -1,8 +1,8 @@
-import React from "react";
-import { CustomVideoPlayerButton, ICustomVideoPlayerButtonProps } from "./customVideoPlayerButton";
 import { mount, ReactWrapper } from "enzyme";
+import React from "react";
 import { KeyboardBinding } from "../keyboardBinding/keyboardBinding";
 import { KeyboardManager, KeyEventType } from "../keyboardManager/keyboardManager";
+import { CustomVideoPlayerButton, ICustomVideoPlayerButtonProps } from "./customVideoPlayerButton";
 
 describe("Custom Video Player Button Component", () => {
     let wrapper: ReactWrapper<ICustomVideoPlayerButtonProps> = null;

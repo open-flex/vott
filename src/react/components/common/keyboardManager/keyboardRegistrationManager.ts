@@ -1,7 +1,7 @@
 import Guard from "../../../../common/guard";
-import { KeyboardManager, KeyEventType } from "./keyboardManager";
-import { IKeyboardBindingProps } from "../keyboardBinding/keyboardBinding";
 import { AppError, ErrorCode } from "../../../../models/applicationState";
+import { IKeyboardBindingProps } from "../keyboardBinding/keyboardBinding";
+import { KeyEventType } from "./keyboardManager";
 
 /**
  * A map of keyboard event registrations

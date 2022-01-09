@@ -1,7 +1,6 @@
-import _ from "lodash";
-import MockFactory from "../mockFactory";
 import { IAsset } from "../../models/applicationState";
 import registerMixins from "../../registerMixins";
+import MockFactory from "../mockFactory";
 
 describe("Map Extensions", () => {
     const testArray = MockFactory.createTestAssets(100);

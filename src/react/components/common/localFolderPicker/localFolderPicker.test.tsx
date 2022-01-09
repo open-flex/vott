@@ -1,9 +1,9 @@
-import React from "react";
-import LocalFolderPicker from "./localFolderPicker";
 import { mount } from "enzyme";
+import React from "react";
+import { LocalFileSystemProxy } from "../../../../providers/storage/localFileSystemProxy";
+import LocalFolderPicker from "./localFolderPicker";
 
 jest.mock("../../../../providers/storage/localFileSystemProxy");
-import { LocalFileSystemProxy } from "../../../../providers/storage/localFileSystemProxy";
 
 describe("Local Folder Picker Component", () => {
     const onChangeHandler = jest.fn();

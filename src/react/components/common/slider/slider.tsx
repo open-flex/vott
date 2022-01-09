@@ -1,6 +1,6 @@
-import React from "react";
 import RcSlider from "rc-slider";
 import "rc-slider/assets/index.css";
+import React from "react";
 
 export interface ISliderProps {
     value: number;

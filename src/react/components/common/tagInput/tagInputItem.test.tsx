@@ -1,7 +1,7 @@
-import React from "react";
-import TagInputItem, { ITagInputItemProps } from "./tagInputItem";
-import MockFactory from "../../../../common/mockFactory";
 import { mount } from "enzyme";
+import React from "react";
+import MockFactory from "../../../../common/mockFactory";
+import TagInputItem, { ITagInputItemProps } from "./tagInputItem";
 
 describe("Tag Input Item", () => {
 

@@ -1,7 +1,7 @@
-import React from "react";
-import { ISliderProps, Slider } from "./slider";
 import { mount, ReactWrapper } from "enzyme";
 import RcSlider from "rc-slider";
+import React from "react";
+import { ISliderProps, Slider } from "./slider";
 
 describe("Slider Component", () => {
     const onChangeHandler = jest.fn();

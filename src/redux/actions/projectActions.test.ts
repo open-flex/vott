@@ -1,21 +1,21 @@
 import _ from "lodash";
 import createMockStore, { MockStoreEnhanced } from "redux-mock-store";
+import thunk from "redux-thunk";
+import { appInfo } from "../../common/appInfo";
+import MockFactory from "../../common/mockFactory";
+import { IApplicationState, IProject } from "../../models/applicationState";
+import { IExportProvider } from "../../providers/export/exportProvider";
+import { ExportProviderFactory } from "../../providers/export/exportProviderFactory";
+import registerMixins from "../../registerMixins";
+import { AssetService } from "../../services/assetService";
+import ProjectService from "../../services/projectService";
+import initialState from "../store/initialState";
 import { ActionTypes } from "./actionTypes";
 import * as projectActions from "./projectActions";
-import MockFactory from "../../common/mockFactory";
-import thunk from "redux-thunk";
 
 jest.mock("../../services/projectService");
-import ProjectService from "../../services/projectService";
 
 jest.mock("../../services/assetService");
-import { AssetService } from "../../services/assetService";
-import { ExportProviderFactory } from "../../providers/export/exportProviderFactory";
-import { IExportProvider } from "../../providers/export/exportProvider";
-import { IApplicationState, IProject } from "../../models/applicationState";
-import initialState from "../store/initialState";
-import { appInfo } from "../../common/appInfo";
-import registerMixins from "../../registerMixins";
 
 describe("Project Redux Actions", () => {
     let store: MockStoreEnhanced<IApplicationState>;

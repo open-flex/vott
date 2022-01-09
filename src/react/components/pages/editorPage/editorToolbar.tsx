@@ -1,11 +1,11 @@
-import React from "react";
 import _ from "lodash";
+import React from "react";
+import { IProject } from "../../../../models/applicationState";
 import { IToolbarItemRegistration } from "../../../../providers/toolbar/toolbarItemFactory";
 import IProjectActions from "../../../../redux/actions/projectActions";
-import { IProject } from "../../../../models/applicationState";
+import { ToolbarItemName } from "../../../../registerToolbar";
 import { IToolbarItemProps, ToolbarItem, ToolbarItemType } from "../../toolbar/toolbarItem";
 import "./editorToolbar.scss";
-import { ToolbarItemName } from "../../../../registerToolbar";
 
 /**
  * Properties for Editor Toolbar

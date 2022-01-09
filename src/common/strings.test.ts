@@ -1,10 +1,10 @@
-import { strings, addLocValues, IAppStrings, interpolate, interpolateJson } from "./strings";
 import { english } from "./localization/en-us";
 import { spanish } from "./localization/es-cl";
 import { japanese } from "./localization/ja";
-import { chinesetw } from "./localization/zh-tw";
 import { korean } from "./localization/ko-kr";
 import { chinese } from "./localization/zh-ch";
+import { chinesetw } from "./localization/zh-tw";
+import { addLocValues, IAppStrings, interpolate, interpolateJson, strings } from "./strings";
 
 const languages = [
   "en",

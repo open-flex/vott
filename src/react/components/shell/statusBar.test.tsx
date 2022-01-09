@@ -1,7 +1,7 @@
-import React from "react";
 import { mount, ReactWrapper } from "enzyme";
-import { StatusBar } from "./statusBar";
+import React from "react";
 import { appInfo } from "../../../common/appInfo";
+import { StatusBar } from "./statusBar";
 
 describe("StatusBar component", () => {
     let wrapper: ReactWrapper;

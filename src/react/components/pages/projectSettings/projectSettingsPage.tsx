@@ -1,15 +1,15 @@
 import React from "react";
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
 import { RouteComponentProps } from "react-router-dom";
-import ProjectForm from "./projectForm";
-import { strings, interpolate } from "../../../../common/strings";
-import IProjectActions, * as projectActions from "../../../../redux/actions/projectActions";
-import { IApplicationState, IProject, IConnection, IAppSettings } from "../../../../models/applicationState";
-import IApplicationActions, * as applicationActions from "../../../../redux/actions/applicationActions";
 import { toast } from "react-toastify";
-import "./projectSettingsPage.scss";
+import { bindActionCreators } from "redux";
+import { interpolate, strings } from "../../../../common/strings";
+import { IApplicationState, IAppSettings, IConnection, IProject } from "../../../../models/applicationState";
+import IApplicationActions, * as applicationActions from "../../../../redux/actions/applicationActions";
+import IProjectActions, * as projectActions from "../../../../redux/actions/projectActions";
+import ProjectForm from "./projectForm";
 import ProjectMetrics from "./projectMetrics";
+import "./projectSettingsPage.scss";
 
 /**
  * Properties for Project Settings Page

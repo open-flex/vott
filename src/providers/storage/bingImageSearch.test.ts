@@ -1,13 +1,10 @@
 import axios from "axios";
-import {
-    BingImageSearch,
-    IBingImageSearchOptions,
-    BingImageSearchAspectRatio,
-    BingImageSearchSize,
-    BingImageSearchLicenseType,
-} from "./bingImageSearch";
-import { IAsset, AssetType, AssetState } from "../../models/applicationState";
 import MD5 from "md5.js";
+import { AssetState, AssetType, IAsset } from "../../models/applicationState";
+import {
+    BingImageSearch, BingImageSearchAspectRatio, BingImageSearchLicenseType, BingImageSearchSize,
+    IBingImageSearchOptions
+} from "./bingImageSearch";
 
 describe("Bing Image Search", () => {
     const defaultOptions: IBingImageSearchOptions = {

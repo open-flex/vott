@@ -1,12 +1,12 @@
 import { mount, ReactWrapper } from "enzyme";
-import React from "react";
 import _ from "lodash";
-import MockFactory from "../../../../common/mockFactory";
-import ProjectMetrics, { IProjectMetricsProps, IProjectMetricsState } from "./projectMetrics";
-import { AssetState, IProject, IAsset } from "../../../../models/applicationState";
-import { AssetService } from "../../../../services/assetService";
+import React from "react";
 import * as packageJson from "../../../../../package.json";
+import MockFactory from "../../../../common/mockFactory";
+import { AssetState, IAsset, IProject } from "../../../../models/applicationState";
 import registerMixins from "../../../../registerMixins";
+import { AssetService } from "../../../../services/assetService";
+import ProjectMetrics, { IProjectMetricsProps, IProjectMetricsState } from "./projectMetrics";
 
 registerMixins();
 

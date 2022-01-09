@@ -1,7 +1,7 @@
+import os from "os";
 import getHostProcess, { HostProcessType } from "./hostProcess";
 
 jest.mock("os");
-import os from "os";
 
 describe("Host Process", () => {
     let originalHostType: string = null;

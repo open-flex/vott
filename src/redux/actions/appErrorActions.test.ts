@@ -1,9 +1,8 @@
-import * as appErrorActions from "./appErrorActions";
-import { ActionTypes } from "./actionTypes";
-import { MockStoreEnhanced } from "redux-mock-store";
+import createMockStore, { MockStoreEnhanced } from "redux-mock-store";
 import thunk from "redux-thunk";
-import createMockStore from "redux-mock-store";
 import MockFactory from "../../common/mockFactory";
+import { ActionTypes } from "./actionTypes";
+import * as appErrorActions from "./appErrorActions";
 
 describe("App Error Actions", () => {
     let store: MockStoreEnhanced;

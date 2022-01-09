@@ -1,21 +1,21 @@
 import { mount, ReactWrapper } from "enzyme";
 import React from "react";
-import { RegionType } from "vott-react";
-import MockFactory from "../../../../common/mockFactory";
-import { EditorMode, IAssetMetadata, IRegion, IAsset } from "../../../../models/applicationState";
-import { AssetPreview, IAssetPreviewProps } from "../../common/assetPreview/assetPreview";
-import Canvas, { ICanvasProps, ICanvasState } from "./canvas";
-import CanvasHelpers from "./canvasHelpers";
-import { appInfo } from "../../../../common/appInfo";
-
-jest.mock("vott-ct/lib/js/CanvasTools/CanvasTools.Editor");
 import { Editor } from "vott-ct/lib/js/CanvasTools/CanvasTools.Editor";
-
-jest.mock("vott-ct/lib/js/CanvasTools/Region/RegionsManager");
-import { RegionsManager } from "vott-ct/lib/js/CanvasTools/Region/RegionsManager";
-import Confirm, { IConfirmProps } from "../../common/confirm/confirm";
 import { Rect } from "vott-ct/lib/js/CanvasTools/Core/Rect";
 import { SelectionMode } from "vott-ct/lib/js/CanvasTools/Interface/ISelectorSettings";
+import { RegionsManager } from "vott-ct/lib/js/CanvasTools/Region/RegionsManager";
+import { RegionType } from "vott-react";
+import { appInfo } from "../../../../common/appInfo";
+import MockFactory from "../../../../common/mockFactory";
+import { EditorMode, IAsset, IAssetMetadata, IRegion } from "../../../../models/applicationState";
+import { AssetPreview, IAssetPreviewProps } from "../../common/assetPreview/assetPreview";
+import Confirm, { IConfirmProps } from "../../common/confirm/confirm";
+import Canvas, { ICanvasProps, ICanvasState } from "./canvas";
+import CanvasHelpers from "./canvasHelpers";
+
+jest.mock("vott-ct/lib/js/CanvasTools/CanvasTools.Editor");
+
+jest.mock("vott-ct/lib/js/CanvasTools/Region/RegionsManager");
 
 describe("Editor Canvas", () => {
     function createComponent(canvasProps?: ICanvasProps, assetPreviewProps?: IAssetPreviewProps)

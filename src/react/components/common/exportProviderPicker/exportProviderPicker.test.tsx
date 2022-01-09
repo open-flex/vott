@@ -1,11 +1,11 @@
-import React from "react";
 import { mount, ReactWrapper } from "enzyme";
 import _ from "lodash";
-import ExportProviderPicker, { IExportProviderPickerProps } from "./exportProviderPicker";
+import React from "react";
 import MockFactory from "../../../../common/mockFactory";
+import { ExportProviderFactory } from "../../../../providers/export/exportProviderFactory";
+import ExportProviderPicker, { IExportProviderPickerProps } from "./exportProviderPicker";
 
 jest.mock("../../../../providers/export/exportProviderFactory");
-import { ExportProviderFactory } from "../../../../providers/export/exportProviderFactory";
 
 describe("Export Provider Picker", () => {
     const exportProviderRegistrations = MockFactory.createExportProviderRegistrations();

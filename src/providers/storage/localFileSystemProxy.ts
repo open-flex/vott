@@ -1,7 +1,7 @@
 import { IpcRendererProxy } from "../../common/ipcRendererProxy";
-import { IStorageProvider } from "./storageProviderFactory";
-import { IAssetProvider } from "./assetProviderFactory";
 import { IAsset, IConnection, StorageType } from "../../models/applicationState";
+import { IAssetProvider } from "./assetProviderFactory";
+import { IStorageProvider } from "./storageProviderFactory";
 
 const PROXY_NAME = "LocalFileSystem";
 

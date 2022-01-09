@@ -3,21 +3,25 @@ import React, { RefObject } from "react";
 import { connect } from "react-redux";
 import { RouteComponentProps } from "react-router-dom";
 import SplitPane from "react-split-pane";
+import { toast } from "react-toastify";
 import { bindActionCreators } from "redux";
 import { SelectionMode } from "vott-ct/lib/js/CanvasTools/Interface/ISelectorSettings";
 import HtmlFileReader from "../../../../common/htmlFileReader";
 import { strings } from "../../../../common/strings";
 import {
-    AssetState, AssetType, EditorMode, IApplicationState,
+    AppError, AssetState, AssetType, EditorMode, ErrorCode, IAdditionalPageSettings, IApplicationState,
     IAppSettings, IAsset, IAssetMetadata, IProject, IRegion,
-    ISize, ITag, IAdditionalPageSettings, AppError, ErrorCode,
+    ISize, ITag
 } from "../../../../models/applicationState";
 import { IToolbarItemRegistration, ToolbarItemFactory } from "../../../../providers/toolbar/toolbarItemFactory";
 import IApplicationActions, * as applicationActions from "../../../../redux/actions/applicationActions";
 import IProjectActions, * as projectActions from "../../../../redux/actions/projectActions";
 import { ToolbarItemName } from "../../../../registerToolbar";
+import { ActiveLearningService } from "../../../../services/activeLearningService";
 import { AssetService } from "../../../../services/assetService";
+import Alert from "../../common/alert/alert";
 import { AssetPreview } from "../../common/assetPreview/assetPreview";
+import Confirm from "../../common/confirm/confirm";
 import { KeyboardBinding } from "../../common/keyboardBinding/keyboardBinding";
 import { KeyEventType } from "../../common/keyboardManager/keyboardManager";
 import { TagInput } from "../../common/tagInput/tagInput";
@@ -27,10 +31,6 @@ import CanvasHelpers from "./canvasHelpers";
 import "./editorPage.scss";
 import EditorSideBar from "./editorSideBar";
 import { EditorToolbar } from "./editorToolbar";
-import Alert from "../../common/alert/alert";
-import Confirm from "../../common/confirm/confirm";
-import { ActiveLearningService } from "../../../../services/activeLearningService";
-import { toast } from "react-toastify";
 
 /**
  * Properties for Editor Page

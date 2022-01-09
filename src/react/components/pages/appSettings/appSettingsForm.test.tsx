@@ -1,8 +1,8 @@
+import { mount, ReactWrapper } from "enzyme";
 import React from "react";
-import { IAppSettingsFormProps, IAppSettingsFormState, AppSettingsForm } from "./appSettingsForm";
-import { ReactWrapper, mount } from "enzyme";
-import { IAppSettings } from "../../../../models/applicationState";
 import MockFactory from "../../../../common/mockFactory";
+import { IAppSettings } from "../../../../models/applicationState";
+import { AppSettingsForm, IAppSettingsFormProps, IAppSettingsFormState } from "./appSettingsForm";
 
 describe("App Settings Form", () => {
     let wrapper: ReactWrapper<IAppSettingsFormProps, IAppSettingsFormState>;

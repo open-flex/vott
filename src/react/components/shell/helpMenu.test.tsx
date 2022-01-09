@@ -2,8 +2,10 @@ import { mount } from "enzyme";
 import React from "react";
 import MockFactory from "../../../common/mockFactory";
 import { KeyboardManager } from "../common/keyboardManager/keyboardManager";
-import { IKeyboardRegistrations,
-    KeyboardRegistrationManager } from "../common/keyboardManager/keyboardRegistrationManager";
+import {
+    IKeyboardRegistrations,
+    KeyboardRegistrationManager
+} from "../common/keyboardManager/keyboardRegistrationManager";
 import { HelpMenu, IHelpMenuProps } from "./helpMenu";
 jest.mock("../common/keyboardManager/keyboardRegistrationManager");
 

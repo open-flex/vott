@@ -1,12 +1,11 @@
 import createMockStore, { MockStoreEnhanced } from "redux-mock-store";
 import thunk from "redux-thunk";
-import * as applicationActions from "./applicationActions";
-import { ActionTypes } from "./actionTypes";
 import { IpcRendererProxy } from "../../common/ipcRendererProxy";
-import { IAppSettings } from "../../models/applicationState";
-import { IApplicationState } from "../../models/applicationState";
 import MockFactory from "../../common/mockFactory";
+import { IApplicationState, IAppSettings } from "../../models/applicationState";
 import initialState from "../store/initialState";
+import { ActionTypes } from "./actionTypes";
+import * as applicationActions from "./applicationActions";
 
 describe("Application Redux Actions", () => {
     let store: MockStoreEnhanced<IApplicationState>;

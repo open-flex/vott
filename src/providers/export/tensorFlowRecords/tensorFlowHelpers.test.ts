@@ -1,4 +1,4 @@
-import { crc32c, maskCrc, getInt64Buffer, getInt32Buffer, textEncode, textDecode } from "./tensorFlowHelpers";
+import { crc32c, getInt32Buffer, getInt64Buffer, maskCrc, textDecode, textEncode } from "./tensorFlowHelpers";
 
 describe("TFRecords Helper Functions", () => {
     describe("Run getInt64Buffer method test", () => {

@@ -1,6 +1,6 @@
 import React from "react";
-import { IConnection } from "../../../../models/applicationState";
 import { RouteComponentProps, withRouter } from "react-router-dom";
+import { IConnection } from "../../../../models/applicationState";
 
 /**
  * Properties for Connection Picker

@@ -1,13 +1,13 @@
-import React from "react";
-import { IToolbarItemProps, ToolbarItemType } from "./toolbarItem";
 import { mount, ReactWrapper } from "enzyme";
-import { SaveProject } from "./saveProject";
-import IProjectActions, * as projectActions from "../../../redux/actions/projectActions";
+import React from "react";
+import { toast } from "react-toastify";
 import MockFactory from "../../../common/mockFactory";
+import IProjectActions, * as projectActions from "../../../redux/actions/projectActions";
+import { ToolbarItemGroup, ToolbarItemName } from "../../../registerToolbar";
+import { SaveProject } from "./saveProject";
+import { IToolbarItemProps, ToolbarItemType } from "./toolbarItem";
 
 jest.mock("react-toastify");
-import { toast } from "react-toastify";
-import { ToolbarItemName, ToolbarItemGroup } from "../../../registerToolbar";
 
 describe("Save Project Toolbar Item", () => {
     const testProject = MockFactory.createTestProject("TestProject");

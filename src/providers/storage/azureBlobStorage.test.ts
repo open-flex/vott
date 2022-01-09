@@ -1,11 +1,11 @@
+import { Aborter, BlockBlobURL, ContainerURL, ServiceURL } from "@azure/storage-blob";
 import MockFactory from "../../common/mockFactory";
+import { AssetType } from "../../models/applicationState";
 import registerProviders from "../../registerProviders";
+import { AssetService } from "../../services/assetService";
 import { AzureBlobStorage } from "./azureBlobStorage";
 jest.mock("@azure/storage-blob");
-import { BlockBlobURL, ContainerURL, ServiceURL, Aborter } from "@azure/storage-blob";
 jest.mock("../../services/assetService");
-import { AssetService } from "../../services/assetService";
-import { AssetType } from "../../models/applicationState";
 
 describe("Azure blob functions", () => {
 

@@ -1,20 +1,20 @@
 import React, { Fragment, ReactElement } from "react";
 import * as shortid from "shortid";
 import { CanvasTools } from "vott-ct";
+import { Editor } from "vott-ct/lib/js/CanvasTools/CanvasTools.Editor";
+import { Rect } from "vott-ct/lib/js/CanvasTools/Core/Rect";
 import { RegionData } from "vott-ct/lib/js/CanvasTools/Core/RegionData";
+import { SelectionMode } from "vott-ct/lib/js/CanvasTools/Interface/ISelectorSettings";
+import Clipboard from "../../../../common/clipboard";
+import { createContentBoundingBox } from "../../../../common/layout";
+import { strings } from "../../../../common/strings";
 import {
     EditorMode, IAssetMetadata,
-    IProject, IRegion, RegionType,
+    IProject, IRegion, RegionType
 } from "../../../../models/applicationState";
-import CanvasHelpers from "./canvasHelpers";
 import { AssetPreview, ContentSource } from "../../common/assetPreview/assetPreview";
-import { Editor } from "vott-ct/lib/js/CanvasTools/CanvasTools.Editor";
-import Clipboard from "../../../../common/clipboard";
 import Confirm from "../../common/confirm/confirm";
-import { strings } from "../../../../common/strings";
-import { SelectionMode } from "vott-ct/lib/js/CanvasTools/Interface/ISelectorSettings";
-import { Rect } from "vott-ct/lib/js/CanvasTools/Core/Rect";
-import { createContentBoundingBox } from "../../../../common/layout";
+import CanvasHelpers from "./canvasHelpers";
 
 export interface ICanvasProps extends React.Props<Canvas> {
     selectedAsset: IAssetMetadata;

@@ -20,9 +20,9 @@
 // const maskDelta uint32 = 0xa282ead8
 // mask returns a masked representation of crc.
 
-import Guard from "../../../common/guard";
-import Int64 from "node-int64";
 import reverse from "buffer-reverse";
+import Int64 from "node-int64";
+import Guard from "../../../common/guard";
 
 /**
  * @buffer - Buffer input

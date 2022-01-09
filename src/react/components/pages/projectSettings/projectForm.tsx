@@ -1,17 +1,17 @@
+import Checkbox from "rc-checkbox";
 import React from "react";
-import Form, { FormValidation, ISubmitEvent, IChangeEvent, Widget } from "react-jsonschema-form";
+import Form, { FormValidation, IChangeEvent, ISubmitEvent, Widget } from "react-jsonschema-form";
 import { ITagsInputProps, TagEditorModal, TagsInput } from "vott-react";
+import "vott-react/dist/css/tagsInput.css";
 import { addLocValues, strings } from "../../../../common/strings";
-import { IConnection, IProject, ITag, IAppSettings } from "../../../../models/applicationState";
+import { IAppSettings, IConnection, IProject, ITag } from "../../../../models/applicationState";
 import { StorageProviderFactory } from "../../../../providers/storage/storageProviderFactory";
 import { ConnectionPickerWithRouter } from "../../common/connectionPicker/connectionPicker";
+import { IConnectionProviderPickerProps } from "../../common/connectionProviderPicker/connectionProviderPicker";
 import { CustomField, CustomWidget } from "../../common/customField/customField";
 import CustomFieldTemplate from "../../common/customField/customFieldTemplate";
-import { ISecurityTokenPickerProps, SecurityTokenPicker } from "../../common/securityTokenPicker/securityTokenPicker";
-import "vott-react/dist/css/tagsInput.css";
-import Checkbox from "rc-checkbox";
-import { IConnectionProviderPickerProps } from "../../common/connectionProviderPicker/connectionProviderPicker";
 import LocalFolderPicker from "../../common/localFolderPicker/localFolderPicker";
+import { ISecurityTokenPickerProps, SecurityTokenPicker } from "../../common/securityTokenPicker/securityTokenPicker";
 
 // tslint:disable-next-line:no-var-requires
 const formSchema = addLocValues(require("./projectForm.json"));

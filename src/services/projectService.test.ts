@@ -1,18 +1,17 @@
 import _ from "lodash";
-import ProjectService, { IProjectService } from "./projectService";
-import MockFactory from "../common/mockFactory";
-import { StorageProviderFactory } from "../providers/storage/storageProviderFactory";
-import {
-    IProject, IExportFormat, ISecurityToken,
-    AssetState, IActiveLearningSettings, ModelPathType,
-} from "../models/applicationState";
 import { constants } from "../common/constants";
-import { ExportProviderFactory } from "../providers/export/exportProviderFactory";
 import { generateKey } from "../common/crypto";
+import MockFactory from "../common/mockFactory";
 import * as utils from "../common/utils";
+import {
+    AssetState, IActiveLearningSettings, IExportFormat, IProject, ISecurityToken, ModelPathType
+} from "../models/applicationState";
 import { ExportAssetState } from "../providers/export/exportProvider";
-import { IVottJsonExportProviderOptions } from "../providers/export/vottJson";
+import { ExportProviderFactory } from "../providers/export/exportProviderFactory";
 import { IPascalVOCExportProviderOptions } from "../providers/export/pascalVOC";
+import { IVottJsonExportProviderOptions } from "../providers/export/vottJson";
+import { StorageProviderFactory } from "../providers/storage/storageProviderFactory";
+import ProjectService, { IProjectService } from "./projectService";
 
 describe("Project Service", () => {
     let projectService: IProjectService = null;

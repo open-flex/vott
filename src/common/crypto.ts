@@ -1,4 +1,4 @@
-import { enc, lib, AES } from "crypto-js";
+import { AES, enc, lib } from "crypto-js";
 import Guard from "./guard";
 
 /**

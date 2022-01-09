@@ -1,12 +1,12 @@
-import React from "react";
+import { mount, ReactWrapper } from "enzyme";
 import _ from "lodash";
-import { EditorToolbar, IEditorToolbarProps, IEditorToolbarState } from "./editorToolbar";
+import React from "react";
 import MockFactory from "../../../../common/mockFactory";
-import registerToolbar, { ToolbarItemName } from "../../../../registerToolbar";
 import { ToolbarItemFactory } from "../../../../providers/toolbar/toolbarItemFactory";
-import { ReactWrapper, mount } from "enzyme";
-import { ToolbarItem } from "../../toolbar/toolbarItem";
+import registerToolbar, { ToolbarItemName } from "../../../../registerToolbar";
 import { KeyboardManager } from "../../common/keyboardManager/keyboardManager";
+import { ToolbarItem } from "../../toolbar/toolbarItem";
+import { EditorToolbar, IEditorToolbarProps, IEditorToolbarState } from "./editorToolbar";
 
 describe("Editor Toolbar", () => {
     let wrapper: ReactWrapper = null;

@@ -1,6 +1,6 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { createQueryString } from "../../../common/utils";
 import Guard from "../../../common/guard";
+import { createQueryString } from "../../../common/utils";
 
 export interface IAzureCustomVisionServiceOptions {
     baseUrl: string;

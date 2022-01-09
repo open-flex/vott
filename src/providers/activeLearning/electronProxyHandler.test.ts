@@ -1,7 +1,7 @@
 jest.mock("../storage/localFileSystemProxy");
+import * as tf from "@tensorflow/tfjs";
 import { LocalFileSystemProxy } from "../storage/localFileSystemProxy";
 import { ElectronProxyHandler } from "./electronProxyHandler";
-import * as tf from "@tensorflow/tfjs";
 // tslint:disable-next-line:no-var-requires
 const modelJson = require("../../../cocoSSDModel/model.json");
 

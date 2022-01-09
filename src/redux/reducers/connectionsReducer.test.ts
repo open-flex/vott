@@ -1,9 +1,9 @@
-import { reducer } from "./connectionsReducer";
-import { IConnection } from "../../models/applicationState";
 import MockFactory from "../../common/mockFactory";
-import { saveConnectionAction, deleteConnectionAction } from "../actions/connectionActions";
-import { loadProjectAction } from "../actions/projectActions";
+import { IConnection } from "../../models/applicationState";
 import { anyOtherAction } from "../actions/actionCreators";
+import { deleteConnectionAction, saveConnectionAction } from "../actions/connectionActions";
+import { loadProjectAction } from "../actions/projectActions";
+import { reducer } from "./connectionsReducer";
 
 describe("Connections Reducer", () => {
     it("Save Connection with new connection appends to list", () => {

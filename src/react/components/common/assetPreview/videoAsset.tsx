@@ -1,15 +1,14 @@
-import React, { SyntheticEvent, Fragment } from "react";
-import ReactDOM from "react-dom";
 import _ from "lodash";
+import React, { Fragment } from "react";
+import ReactDOM from "react-dom";
 import {
-    Player, BigPlayButton, ControlBar, CurrentTimeDisplay,
-    TimeDivider, PlaybackRateMenuButton, VolumeMenuButton,
+    BigPlayButton, ControlBar, CurrentTimeDisplay, PlaybackRateMenuButton, Player, TimeDivider, VolumeMenuButton
 } from "video-react";
-import { IAssetProps } from "./assetPreview";
-import { IAsset, AssetType, AssetState } from "../../../../models/applicationState";
+import { strings } from "../../../../common/strings";
+import { AssetState, AssetType, IAsset } from "../../../../models/applicationState";
 import { AssetService } from "../../../../services/assetService";
 import { CustomVideoPlayerButton } from "../../common/videoPlayer/customVideoPlayerButton";
-import { strings } from "../../../../common/strings";
+import { IAssetProps } from "./assetPreview";
 
 /**
  * VideoAsset component properties

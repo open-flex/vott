@@ -2,20 +2,20 @@ import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import { Router } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-import Sidebar from "./react/components/shell/sidebar";
-import MainContentRouter from "./react/components/shell/mainContentRouter";
-import { IAppError, IApplicationState, IProject, ErrorCode } from "./models/applicationState";
-import "./App.scss";
 import "react-toastify/dist/ReactToastify.css";
-import IAppErrorActions, * as appErrorActions from "./redux/actions/appErrorActions";
 import { bindActionCreators } from "redux";
+import "./App.scss";
+import history from "./history";
+import { ErrorCode, IAppError, IApplicationState, IProject } from "./models/applicationState";
 import { ErrorHandler } from "./react/components/common/errorHandler/errorHandler";
 import { KeyboardManager } from "./react/components/common/keyboardManager/keyboardManager";
-import { TitleBar } from "./react/components/shell/titleBar";
+import { HelpMenu } from "./react/components/shell/helpMenu";
+import MainContentRouter from "./react/components/shell/mainContentRouter";
+import Sidebar from "./react/components/shell/sidebar";
 import { StatusBar } from "./react/components/shell/statusBar";
 import { StatusBarMetrics } from "./react/components/shell/statusBarMetrics";
-import { HelpMenu } from "./react/components/shell/helpMenu";
-import history from "./history";
+import { TitleBar } from "./react/components/shell/titleBar";
+import IAppErrorActions, * as appErrorActions from "./redux/actions/appErrorActions";
 
 interface IAppProps {
     currentProject?: IProject;

@@ -1,19 +1,19 @@
 import React from "react";
-import { Provider } from "react-redux";
 import ReactDOM from "react-dom";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { Provider } from "react-redux";
 import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import App from "./App";
 import "./assets/css/bootstrap-theme-slate.css";
 import "./index.scss";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
-import createReduxStore from "./redux/store/store";
-import initialState from "./redux/store/initialState";
 import { IApplicationState } from "./models/applicationState";
-import registerProviders from "./registerProviders";
+import initialState from "./redux/store/initialState";
+import createReduxStore from "./redux/store/store";
 import registerMixins from "./registerMixins";
-
+import registerProviders from "./registerProviders";
+import * as serviceWorker from "./serviceWorker";
 import { setUpAppInsights } from "./telemetry";
+
 
 setUpAppInsights();
 

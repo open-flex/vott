@@ -1,17 +1,16 @@
-import React from "react";
 import _ from "lodash";
+import React from "react";
+import {
+    DiscreteColorLegend, Hint, HorizontalGridLines, Sunburst, VerticalBarSeries, XAxis, XYPlot, YAxis
+} from "react-vis";
+import "react-vis/dist/styles/plot.scss";
+import "react-vis/dist/styles/radial-chart.scss";
+import { interpolate, strings } from "../../../../common/strings";
 import {
     AssetState, IAsset, IAssetMetadata,
-    IProject, IRegion, ITag, IPoint, AssetType,
+    IProject, IRegion, ITag
 } from "../../../../models/applicationState";
 import { AssetService } from "../../../../services/assetService";
-import { strings, interpolate } from "../../../../common/strings";
-import {
-    RadialChart, XYPlot, ArcSeries, Sunburst, Hint, DiscreteColorLegend,
-    HorizontalGridLines, XAxis, YAxis, VerticalBarSeries,
-} from "react-vis";
-import "react-vis/dist/styles/radial-chart.scss";
-import "react-vis/dist/styles/plot.scss";
 import "./projectSettingsPage.scss";
 
 /**

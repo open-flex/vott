@@ -1,6 +1,6 @@
-import { ActionTypes } from "../actions/actionTypes";
 import { IAppSettings } from "../../models/applicationState";
 import { AnyAction } from "../actions/actionCreators";
+import { ActionTypes } from "../actions/actionTypes";
 
 /**
  * Reducer for application settings. Actions handled:

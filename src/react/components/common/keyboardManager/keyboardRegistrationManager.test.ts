@@ -1,6 +1,6 @@
-import { KeyboardRegistrationManager } from "./keyboardRegistrationManager";
-import { KeyEventType } from "./keyboardManager";
 import { IKeyboardBindingProps } from "../keyboardBinding/keyboardBinding";
+import { KeyEventType } from "./keyboardManager";
+import { KeyboardRegistrationManager } from "./keyboardRegistrationManager";
 
 describe("Keyboard Registration Manager", () => {
     let keyboardManager: KeyboardRegistrationManager = null;

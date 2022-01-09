@@ -1,9 +1,9 @@
 import axios, { AxiosResponse } from "axios";
-import HtmlFileReader from "./htmlFileReader";
-import { AssetService } from "../services/assetService";
-import { TFRecordsBuilder, FeatureType } from "../providers/export/tensorFlowRecords/tensorFlowBuilder";
-import MockFactory from "./mockFactory";
 import { AssetState, IAsset } from "../models/applicationState";
+import { FeatureType, TFRecordsBuilder } from "../providers/export/tensorFlowRecords/tensorFlowBuilder";
+import { AssetService } from "../services/assetService";
+import HtmlFileReader from "./htmlFileReader";
+import MockFactory from "./mockFactory";
 
 describe("Html File Reader", () => {
     const assetTestCache = new Map<string, IAsset>();

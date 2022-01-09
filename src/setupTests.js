@@ -1,6 +1,6 @@
 import { configure } from 'enzyme';
-import 'jest-enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import 'jest-enzyme';
 
 configure({ adapter: new Adapter() });
 // Silence console.log and console.group statements in testing

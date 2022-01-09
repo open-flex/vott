@@ -1,29 +1,29 @@
 import { mount, ReactWrapper } from "enzyme";
 import React from "react";
 import { Provider } from "react-redux";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { toast } from "react-toastify";
 import { AnyAction, Store } from "redux";
 import MockFactory from "../../../../common/mockFactory";
+import { AppError, ErrorCode, IApplicationState, IProject } from "../../../../models/applicationState";
 import { StorageProviderFactory } from "../../../../providers/storage/storageProviderFactory";
-import { IApplicationState, IProject, AppError, ErrorCode } from "../../../../models/applicationState";
-import IProjectActions, * as projectActions from "../../../../redux/actions/projectActions";
 import IApplicationActions, * as applicationActions from "../../../../redux/actions/applicationActions";
+import IProjectActions, * as projectActions from "../../../../redux/actions/projectActions";
 import createReduxStore from "../../../../redux/store/store";
+import registerMixins from "../../../../registerMixins";
+import ImportService from "../../../../services/importService";
+import ProjectService from "../../../../services/projectService";
+import { CloudFilePicker, ICloudFilePickerProps } from "../../common/cloudFilePicker/cloudFilePicker";
 import CondensedList from "../../common/condensedList/condensedList";
 import Confirm, { IConfirmProps } from "../../common/confirm/confirm";
 import FilePicker, { IFilePickerProps } from "../../common/filePicker/filePicker";
 import HomePage, { IHomePageProps, IHomePageState } from "./homePage";
 
 jest.mock("../../common/cloudFilePicker/cloudFilePicker");
-import { CloudFilePicker, ICloudFilePickerProps } from "../../common/cloudFilePicker/cloudFilePicker";
 
 jest.mock("../../../../services/projectService");
-import ProjectService from "../../../../services/projectService";
 
 jest.mock("../../../../services/importService");
-import ImportService from "../../../../services/importService";
-import { toast } from "react-toastify";
-import registerMixins from "../../../../registerMixins";
 
 describe("Homepage Component", () => {
     let store: Store<IApplicationState> = null;

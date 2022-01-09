@@ -1,7 +1,7 @@
-import React from "react";
 import { mount, ReactWrapper } from "enzyme";
-import { TitleBar, ITitleBarProps, ITitleBarState } from "./titleBar";
-import Menu, { MenuItem, SubMenu, Divider } from "rc-menu";
+import Menu, { Divider, MenuItem, SubMenu } from "rc-menu";
+import React from "react";
+import { ITitleBarProps, ITitleBarState, TitleBar } from "./titleBar";
 
 describe("TileBar Component", () => {
     let wrapper: ReactWrapper<ITitleBarProps, ITitleBarState>;

@@ -1,9 +1,9 @@
 import axios from "axios";
-import { IAsset, AssetType } from "../../models/applicationState";
-import { IAssetProvider } from "./assetProviderFactory";
-import { AssetService } from "../../services/assetService";
 import Guard from "../../common/guard";
 import { createQueryString } from "../../common/utils";
+import { AssetType, IAsset } from "../../models/applicationState";
+import { AssetService } from "../../services/assetService";
+import { IAssetProvider } from "./assetProviderFactory";
 
 /**
  * Options for Bing Image Search

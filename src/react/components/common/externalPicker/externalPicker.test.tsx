@@ -1,8 +1,8 @@
-import React from "react";
-import { mount, ReactWrapper } from "enzyme";
 import axios from "axios";
-import ExternalPicker, { IExternalPickerProps, IExternalPickerState, FilterOperator } from "./externalPicker";
+import { mount, ReactWrapper } from "enzyme";
+import React from "react";
 import MockFactory from "../../../../common/mockFactory";
+import ExternalPicker, { FilterOperator, IExternalPickerProps, IExternalPickerState } from "./externalPicker";
 
 describe("External Picker", () => {
     const onChangeHandler = jest.fn();

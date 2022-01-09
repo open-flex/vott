@@ -1,6 +1,5 @@
 import {
-    app, ipcMain, BrowserWindow, BrowserWindowConstructorOptions,
-    Menu, MenuItemConstructorOptions,
+    app, BrowserWindow, BrowserWindowConstructorOptions, ipcMain, Menu, MenuItemConstructorOptions
 } from "electron";
 import registerMixins from "../registerMixins";
 import { IpcMainProxy } from "./common/ipcMainProxy";

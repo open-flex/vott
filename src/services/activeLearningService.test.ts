@@ -1,8 +1,8 @@
-import { ActiveLearningService } from "./activeLearningService";
-import { IActiveLearningSettings, ModelPathType, IAssetMetadata, AssetState } from "../models/applicationState";
-import MockFactory from "../common/mockFactory";
 import { appInfo } from "../common/appInfo";
+import MockFactory from "../common/mockFactory";
+import { AssetState, IActiveLearningSettings, IAssetMetadata, ModelPathType } from "../models/applicationState";
 import { ObjectDetection } from "../providers/activeLearning/objectDetection";
+import { ActiveLearningService } from "./activeLearningService";
 
 describe("Active Learning Service", () => {
     const objectDetectionMock = ObjectDetection as jest.Mocked<typeof ObjectDetection>;

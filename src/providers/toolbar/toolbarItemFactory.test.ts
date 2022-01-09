@@ -1,6 +1,6 @@
+import { IToolbarItemMetadata, ToolbarItem, ToolbarItemType } from "../../react/components/toolbar/toolbarItem";
+import registerToolbar, { ToolbarItemGroup, ToolbarItemName } from "../../registerToolbar";
 import { ToolbarItemFactory } from "./toolbarItemFactory";
-import { IToolbarItemMetadata, ToolbarItemType, ToolbarItem } from "../../react/components/toolbar/toolbarItem";
-import registerToolbar, { ToolbarItemName, ToolbarItemGroup } from "../../registerToolbar";
 
 class TestToolbarItem extends ToolbarItem {
     protected onItemClick() {

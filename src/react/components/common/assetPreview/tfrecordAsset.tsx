@@ -1,9 +1,9 @@
 import React from "react";
-import { IAssetProps } from "./assetPreview";
-import { IAsset } from "../../../../models/applicationState";
 import HtmlFileReader from "../../../../common/htmlFileReader";
-import { TFRecordsReader } from "../../../../providers/export/tensorFlowRecords/tensorFlowReader";
+import { IAsset } from "../../../../models/applicationState";
 import { FeatureType } from "../../../../providers/export/tensorFlowRecords/tensorFlowBuilder";
+import { TFRecordsReader } from "../../../../providers/export/tensorFlowRecords/tensorFlowReader";
+import { IAssetProps } from "./assetPreview";
 
 /**
  * State for TFRecord Asset Image component

@@ -1,7 +1,7 @@
-import React from "react";
 import _ from "lodash";
-import { StorageProviderFactory } from "../../../../providers/storage/storageProviderFactory";
+import React from "react";
 import { AssetProviderFactory } from "../../../../providers/storage/assetProviderFactory";
+import { StorageProviderFactory } from "../../../../providers/storage/storageProviderFactory";
 
 /**
  * Properties for Connection Provider Picker

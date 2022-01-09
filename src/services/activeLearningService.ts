@@ -1,8 +1,8 @@
-import { IAssetMetadata, ModelPathType, IActiveLearningSettings, AssetState } from "../models/applicationState";
-import { ObjectDetection } from "../providers/activeLearning/objectDetection";
+import { Env } from "../common/environment";
 import Guard from "../common/guard";
 import { isElectron } from "../common/hostProcess";
-import { Env } from "../common/environment";
+import { AssetState, IActiveLearningSettings, IAssetMetadata, ModelPathType } from "../models/applicationState";
+import { ObjectDetection } from "../providers/activeLearning/objectDetection";
 
 export class ActiveLearningService {
     private objectDetection: ObjectDetection;

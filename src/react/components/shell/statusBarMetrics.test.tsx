@@ -1,9 +1,9 @@
-import React from "react";
+import { mount } from "enzyme";
 import _ from "lodash";
-import { mount, ReactWrapper } from "enzyme";
-import { StatusBarMetrics, IStatusBarMetricsProps } from "./statusBarMetrics";
+import React from "react";
 import MockFactory from "../../../common/mockFactory";
 import { AssetState } from "../../../models/applicationState";
+import { IStatusBarMetricsProps, StatusBarMetrics } from "./statusBarMetrics";
 
 describe("StatusBarMetrics Component", () => {
     const testProject = MockFactory.createTestProject("TestProject");

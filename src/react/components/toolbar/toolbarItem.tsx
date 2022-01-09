@@ -1,9 +1,9 @@
 import React, { Fragment, SyntheticEvent } from "react";
 import { IProject } from "../../../models/applicationState";
 import IProjectActions from "../../../redux/actions/projectActions";
-import { IKeyboardContext, KeyboardContext, KeyEventType } from "../common/keyboardManager/keyboardManager";
+import { ToolbarItemGroup, ToolbarItemName } from "../../../registerToolbar";
 import { KeyboardBinding } from "../common/keyboardBinding/keyboardBinding";
-import { ToolbarItemName, ToolbarItemGroup } from "../../../registerToolbar";
+import { IKeyboardContext, KeyboardContext, KeyEventType } from "../common/keyboardManager/keyboardManager";
 
 /**
  * Toolbar Item Metadata

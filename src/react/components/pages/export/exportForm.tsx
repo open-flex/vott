@@ -1,17 +1,16 @@
+import Checkbox from "rc-checkbox";
+import "rc-checkbox/assets/index.css";
 import React from "react";
-import _ from "lodash";
-import Form, { Widget, FormValidation, IChangeEvent, ISubmitEvent } from "react-jsonschema-form";
+import Form, { FormValidation, IChangeEvent, ISubmitEvent, Widget } from "react-jsonschema-form";
 import { getDefaultFormState } from "react-jsonschema-form/lib/utils";
 import { addLocValues, strings } from "../../../../common/strings";
 import { IExportFormat, IExportProviderOptions } from "../../../../models/applicationState";
 import { ExportProviderFactory } from "../../../../providers/export/exportProviderFactory";
-import ExportProviderPicker from "../../common/exportProviderPicker/exportProviderPicker";
+import { CustomWidget } from "../../common/customField/customField";
 import CustomFieldTemplate from "../../common/customField/customFieldTemplate";
+import ExportProviderPicker from "../../common/exportProviderPicker/exportProviderPicker";
 import ExternalPicker from "../../common/externalPicker/externalPicker";
 import { ProtectedInput } from "../../common/protectedInput/protectedInput";
-import Checkbox from "rc-checkbox";
-import "rc-checkbox/assets/index.css";
-import { CustomWidget } from "../../common/customField/customField";
 import { Slider } from "../../common/slider/slider";
 
 // tslint:disable-next-line:no-var-requires

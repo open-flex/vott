@@ -1,9 +1,9 @@
 import React from "react";
-import { IAppError, ErrorCode, AppError } from "../../../../models/applicationState";
-import { strings } from "../../../../common/strings";
-import Alert from "../alert/alert";
 import { Env } from "../../../../common/environment";
+import { strings } from "../../../../common/strings";
+import { AppError, ErrorCode, IAppError } from "../../../../models/applicationState";
 import { trackError } from "../../../../telemetry";
+import Alert from "../alert/alert";
 
 /**
  * Component properties for ErrorHandler component

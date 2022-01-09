@@ -1,7 +1,7 @@
-import React from "react";
-import ConditionalNavLink from "./conditionalNavLink";
 import { mount, ReactWrapper } from "enzyme";
+import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
+import ConditionalNavLink from "./conditionalNavLink";
 
 describe("Conditional Nav Link", () => {
     function createLink(to: string, disabled: boolean, props: any): ReactWrapper {

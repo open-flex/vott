@@ -1,8 +1,8 @@
 import React from "react";
-import MessageBox from "../common/messageBox/messageBox";
 import { strings } from "../../../common/strings";
-import { KeyboardContext, IKeyboardContext, KeyEventType } from "../common/keyboardManager/keyboardManager";
 import { IKeyboardBindingProps, KeyboardBinding } from "../common/keyboardBinding/keyboardBinding";
+import { IKeyboardContext, KeyboardContext, KeyEventType } from "../common/keyboardManager/keyboardManager";
+import MessageBox from "../common/messageBox/messageBox";
 import "./helpMenu.scss";
 
 export interface IHelpMenuProps {

@@ -1,12 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
 import { RouteComponentProps } from "react-router";
-import { bindActionCreators } from "redux";
-import { IActiveLearningSettings, IProject, IApplicationState } from "../../../../models/applicationState";
-import IProjectActions, * as projectActions from "../../../../redux/actions/projectActions";
-import { strings } from "../../../../common/strings";
-import { ActiveLearningForm } from "./activeLearningForm";
 import { toast } from "react-toastify";
+import { bindActionCreators } from "redux";
+import { strings } from "../../../../common/strings";
+import { IActiveLearningSettings, IApplicationState, IProject } from "../../../../models/applicationState";
+import IProjectActions, * as projectActions from "../../../../redux/actions/projectActions";
+import { ActiveLearningForm } from "./activeLearningForm";
 
 export interface IActiveLearningPageProps extends RouteComponentProps, React.Props<ActiveLearningPage> {
     project: IProject;

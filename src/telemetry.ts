@@ -1,12 +1,12 @@
-import { Env } from "./common/environment";
-import { reactAI } from "react-appinsights";
-import history from "./history";
 import { ApplicationInsights, IExceptionTelemetry, SeverityLevel } from "@microsoft/applicationinsights-web";
-import { version } from "../package.json";
-import { isElectron } from "./common/hostProcess";
-import { Action } from "redux";
-import { IAppError } from "./models/applicationState";
 import { config } from "dotenv";
+import { reactAI } from "react-appinsights";
+import { Action } from "redux";
+import { version } from "../package.json";
+import { Env } from "./common/environment";
+import { isElectron } from "./common/hostProcess";
+import history from "./history";
+import { IAppError } from "./models/applicationState";
 
 // vott-app-insights
 config();

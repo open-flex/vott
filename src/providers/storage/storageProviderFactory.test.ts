@@ -1,5 +1,5 @@
-import { StorageProviderFactory, IStorageProvider } from "./storageProviderFactory";
 import { IAsset, StorageType } from "../../models/applicationState";
+import { IStorageProvider, StorageProviderFactory } from "./storageProviderFactory";
 
 describe("Storage Provider Factory", () => {
     it("registers new storage providers", () => {

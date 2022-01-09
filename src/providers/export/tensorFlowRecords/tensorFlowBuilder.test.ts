@@ -1,4 +1,4 @@
-import { TFRecordsBuilder, FeatureType } from "./tensorFlowBuilder";
+import { FeatureType, TFRecordsBuilder } from "./tensorFlowBuilder";
 
 describe("TFRecords Builder Functions", () => {
     describe("Check Adding Single Features", () => {

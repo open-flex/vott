@@ -1,8 +1,8 @@
-import { setUpAppInsights, trackError, trackReduxAction } from "./telemetry";
-import { ApplicationInsights, SeverityLevel, IExceptionTelemetry } from "@microsoft/applicationinsights-web";
+import { ApplicationInsights, IExceptionTelemetry, SeverityLevel } from "@microsoft/applicationinsights-web";
 import { Action } from "redux";
-import { ErrorCode } from "./models/applicationState";
 import { isElectron } from "./common/hostProcess";
+import { ErrorCode } from "./models/applicationState";
+import { setUpAppInsights, trackError, trackReduxAction } from "./telemetry";
 
 jest.mock("./common/hostProcess");
 jest.mock("@microsoft/applicationinsights-web");

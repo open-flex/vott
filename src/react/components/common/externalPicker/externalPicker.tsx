@@ -1,5 +1,5 @@
-import React, { SyntheticEvent } from "react";
 import axios, { AxiosRequestConfig, Method } from "axios";
+import React, { SyntheticEvent } from "react";
 import { FieldProps } from "react-jsonschema-form";
 import { interpolate } from "../../../../common/strings";
 

@@ -1,7 +1,7 @@
-import { reducer } from "./applicationReducer";
 import { IAppSettings } from "../../models/applicationState";
-import { toggleDevToolsAction, refreshApplicationAction, saveAppSettingsAction } from "../actions/applicationActions";
 import { anyOtherAction } from "../actions/actionCreators";
+import { refreshApplicationAction, saveAppSettingsAction, toggleDevToolsAction } from "../actions/applicationActions";
+import { reducer } from "./applicationReducer";
 
 describe("Application Reducer", () => {
     it("Toggle dev tools sets correct state", () => {

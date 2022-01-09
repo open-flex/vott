@@ -1,8 +1,8 @@
 import { IpcRendererProxy } from "../../common/ipcRendererProxy";
-import { LocalFileSystemProxy, ILocalFileSystemProxyOptions } from "./localFileSystemProxy";
-import { StorageProviderFactory } from "./storageProviderFactory";
-import registerProviders from "../../registerProviders";
 import MockFactory from "../../common/mockFactory";
+import registerProviders from "../../registerProviders";
+import { ILocalFileSystemProxyOptions, LocalFileSystemProxy } from "./localFileSystemProxy";
+import { StorageProviderFactory } from "./storageProviderFactory";
 
 describe("LocalFileSystem Proxy Storage Provider", () => {
     it("Provider is registered with the StorageProviderFactory", () => {

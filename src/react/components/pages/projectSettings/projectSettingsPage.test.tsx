@@ -3,14 +3,14 @@ import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router } from "react-router-dom";
 import MockFactory from "../../../../common/mockFactory";
+import { IAppSettings, IProject } from "../../../../models/applicationState";
 import createReduxStore from "../../../../redux/store/store";
+import ProjectService from "../../../../services/projectService";
+import ProjectForm, { IProjectFormProps } from "./projectForm";
+import ProjectMetrics from "./projectMetrics";
 import ProjectSettingsPage, { IProjectSettingsPageProps, IProjectSettingsPageState } from "./projectSettingsPage";
 
 jest.mock("../../../../services/projectService");
-import ProjectService from "../../../../services/projectService";
-import { IAppSettings, IProject } from "../../../../models/applicationState";
-import ProjectMetrics from "./projectMetrics";
-import ProjectForm, { IProjectFormProps } from "./projectForm";
 
 jest.mock("./projectMetrics", () => () => {
     return (

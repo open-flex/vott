@@ -1,7 +1,7 @@
-import React, { RefObject } from "react";
-import { ReactWrapper, mount } from "enzyme";
-import FilePicker from "./filePicker";
+import { mount, ReactWrapper } from "enzyme";
+import React from "react";
 import HtmlFileReader from "../../../../common/htmlFileReader";
+import FilePicker from "./filePicker";
 
 describe("File Picker Component", () => {
     let wrapper: ReactWrapper = null;

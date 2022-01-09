@@ -1,17 +1,17 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Route, RouteComponentProps } from "react-router-dom";
+import { toast } from "react-toastify";
 import { bindActionCreators } from "redux";
-import { strings, interpolate } from "../../../../common/strings";
+import { interpolate, strings } from "../../../../common/strings";
 import { IApplicationState, IConnection } from "../../../../models/applicationState";
+import { AssetProviderFactory } from "../../../../providers/storage/assetProviderFactory";
 import IConnectionActions, * as connectionActions from "../../../../redux/actions/connectionActions";
 import CondensedList from "../../common/condensedList/condensedList";
 import Confirm from "../../common/confirm/confirm";
 import ConnectionForm from "./connectionForm";
 import ConnectionItem from "./connectionItem";
 import "./connectionsPage.scss";
-import { toast } from "react-toastify";
-import { AssetProviderFactory } from "../../../../providers/storage/assetProviderFactory";
 
 /**
  * Properties for Connection Page

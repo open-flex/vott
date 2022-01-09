@@ -1,14 +1,14 @@
 import { mount, ReactWrapper } from "enzyme";
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
+import { TagsInput } from "vott-react";
 import MockFactory from "../../../../common/mockFactory";
 import { KeyCodes } from "../../../../common/utils";
-import registerProviders from "../../../../registerProviders";
-import ProjectForm, { IProjectFormProps, IProjectFormState } from "./projectForm";
 import { IProjectVideoSettings } from "../../../../models/applicationState";
-import { SecurityTokenPicker } from "../../common/securityTokenPicker/securityTokenPicker";
+import registerProviders from "../../../../registerProviders";
 import { ConnectionPickerWithRouter } from "../../common/connectionPicker/connectionPicker";
-import { TagsInput } from "vott-react";
+import { SecurityTokenPicker } from "../../common/securityTokenPicker/securityTokenPicker";
+import ProjectForm, { IProjectFormProps, IProjectFormState } from "./projectForm";
 
 describe("Project Form Component", () => {
     const project = MockFactory.createTestProject("TestProject");

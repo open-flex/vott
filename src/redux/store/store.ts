@@ -1,10 +1,10 @@
 import { applyMiddleware, createStore, Store } from "redux";
 import thunk from "redux-thunk";
-import rootReducer from "../reducers";
-import { IApplicationState } from "../../models/applicationState";
-import { mergeInitialState } from "../middleware/localStorage";
-import { createAppInsightsLogger } from "../middleware/appInsights";
 import { Env } from "../../common/environment";
+import { IApplicationState } from "../../models/applicationState";
+import { createAppInsightsLogger } from "../middleware/appInsights";
+import { mergeInitialState } from "../middleware/localStorage";
+import rootReducer from "../reducers";
 
 /**
  * Creates initial redux store from initial application state

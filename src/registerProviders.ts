@@ -1,18 +1,18 @@
+import { HostProcessType } from "./common/hostProcess";
+import { strings } from "./common/strings";
+import { AzureCustomVisionProvider } from "./providers/export/azureCustomVision";
+import { CntkExportProvider } from "./providers/export/cntk";
+import { CsvExportProvider } from "./providers/export/csv";
 import { ExportProviderFactory } from "./providers/export/exportProviderFactory";
 import { PascalVOCExportProvider } from "./providers/export/pascalVOC";
 import { TFRecordsExportProvider } from "./providers/export/tensorFlowRecords";
 import { VottJsonExportProvider } from "./providers/export/vottJson";
-import { CsvExportProvider } from "./providers/export/csv";
 import { AssetProviderFactory } from "./providers/storage/assetProviderFactory";
 import { AzureBlobStorage } from "./providers/storage/azureBlobStorage";
 import { BingImageSearch } from "./providers/storage/bingImageSearch";
 import { LocalFileSystemProxy } from "./providers/storage/localFileSystemProxy";
 import { StorageProviderFactory } from "./providers/storage/storageProviderFactory";
 import registerToolbar from "./registerToolbar";
-import { strings } from "./common/strings";
-import { HostProcessType } from "./common/hostProcess";
-import { AzureCustomVisionProvider } from "./providers/export/azureCustomVision";
-import { CntkExportProvider } from "./providers/export/cntk";
 
 /**
  * Registers storage, asset and export providers, as well as all toolbar items

@@ -1,5 +1,5 @@
-import React, { SyntheticEvent, ReactElement } from "react";
-import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import React, { ReactElement, SyntheticEvent } from "react";
+import { Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
 
 /**
  * Accepts any number of parameters and returns a string

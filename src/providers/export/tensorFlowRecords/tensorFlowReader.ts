@@ -1,8 +1,7 @@
 import Guard from "../../../common/guard";
-import { TFRecordsImageMessage, Features, Feature, FeatureList,
-    BytesList, Int64List, FloatList } from "./tensorFlowRecordsProtoBuf_pb";
-import { crc32c, maskCrc, textDecode, readInt64 } from "./tensorFlowHelpers";
 import { FeatureType } from "./tensorFlowBuilder";
+import { crc32c, maskCrc, readInt64, textDecode } from "./tensorFlowHelpers";
+import { TFRecordsImageMessage } from "./tensorFlowRecordsProtoBuf_pb";
 
 /**
  * @name - TFRecords Read Class

@@ -1,29 +1,14 @@
 import { Action } from "redux";
-import { IToggleDevToolsAction,
-         IRefreshApplicationAction,
-         ISaveAppSettingsAction,
-         IEnsureSecurityTokenAction,
-} from "./applicationActions";
 import { ActionTypes } from "./actionTypes";
+import { IClearErrorAction, IShowAppErrorAction } from "./appErrorActions";
 import {
-    ILoadConnectionAction,
-    ISaveConnectionAction,
-    IDeleteConnectionAction,
-} from "./connectionActions";
+    IEnsureSecurityTokenAction, IRefreshApplicationAction, ISaveAppSettingsAction, IToggleDevToolsAction
+} from "./applicationActions";
+import { IDeleteConnectionAction, ILoadConnectionAction, ISaveConnectionAction } from "./connectionActions";
 import {
-    ILoadProjectAction,
-    ICloseProjectAction,
-    ISaveProjectAction,
-    ILoadProjectAssetsAction,
-    ISaveAssetMetadataAction,
-    ILoadAssetMetadataAction,
-    IExportProjectAction,
-    IDeleteProjectAction,
+    ICloseProjectAction, IDeleteProjectAction, IExportProjectAction, ILoadAssetMetadataAction, ILoadProjectAction,
+    ILoadProjectAssetsAction, ISaveAssetMetadataAction, ISaveProjectAction
 } from "./projectActions";
-import {
-    IShowAppErrorAction,
-    IClearErrorAction,
-} from "./appErrorActions";
 
 /**
  * Data payload dispatched from the action and delivered to reducer

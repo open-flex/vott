@@ -1,8 +1,8 @@
+import { strings } from "./common/strings";
 import { ToolbarItemFactory } from "./providers/toolbar/toolbarItemFactory";
 import { ExportProject } from "./react/components/toolbar/exportProject";
 import { SaveProject } from "./react/components/toolbar/saveProject";
 import { ToolbarItemType } from "./react/components/toolbar/toolbarItem";
-import { strings } from "./common/strings";
 
 export enum ToolbarItemName {
     SelectCanvas = "selectCanvas",

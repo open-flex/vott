@@ -1,9 +1,9 @@
-import registerProviders from "./registerProviders";
-import { StorageProviderFactory } from "./providers/storage/storageProviderFactory";
+import getHostProcess, { HostProcessType } from "./common/hostProcess";
 import { AssetProviderFactory } from "./providers/storage/assetProviderFactory";
+import { StorageProviderFactory } from "./providers/storage/storageProviderFactory";
+import registerProviders from "./registerProviders";
 
 jest.mock("./common/hostProcess");
-import getHostProcess, { HostProcessType } from "./common/hostProcess";
 
 const hostProcess = getHostProcess();
 

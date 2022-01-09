@@ -1,11 +1,11 @@
 import createMockStore, { MockStoreEnhanced } from "redux-mock-store";
+import thunk from "redux-thunk";
+import MockFactory from "../../common/mockFactory";
+import ConnectionService from "../../services/connectionService";
 import { ActionTypes } from "./actionTypes";
 import * as connectionActions from "./connectionActions";
-import MockFactory from "../../common/mockFactory";
-import thunk from "redux-thunk";
 
 jest.mock("../../services/connectionService");
-import ConnectionService from "../../services/connectionService";
 
 describe("Conneciton Redux Actions", () => {
     let store: MockStoreEnhanced;

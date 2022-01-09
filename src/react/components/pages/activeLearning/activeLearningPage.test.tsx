@@ -1,16 +1,16 @@
+import { mount, ReactWrapper } from "enzyme";
 import React from "react";
-import ActiveLearningPage, { IActiveLearningPageProps, IActiveLearningPageState } from "./activeLearningPage";
-import { ReactWrapper, mount } from "enzyme";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router } from "react-router-dom";
-import createReduxStore from "../../../../redux/store/store";
-import MockFactory from "../../../../common/mockFactory";
-import { ActiveLearningForm } from "./activeLearningForm";
-import { IActiveLearningSettings, ModelPathType } from "../../../../models/applicationState";
-jest.mock("../../../../services/projectService");
-import ProjectService from "../../../../services/projectService";
 import { toast } from "react-toastify";
+import MockFactory from "../../../../common/mockFactory";
 import { strings } from "../../../../common/strings";
+import { IActiveLearningSettings, ModelPathType } from "../../../../models/applicationState";
+import createReduxStore from "../../../../redux/store/store";
+import ProjectService from "../../../../services/projectService";
+import { ActiveLearningForm } from "./activeLearningForm";
+import ActiveLearningPage, { IActiveLearningPageProps, IActiveLearningPageState } from "./activeLearningPage";
+jest.mock("../../../../services/projectService");
 
 describe("Active Learning Page", () => {
     function createComponent(store, props: IActiveLearningPageProps): ReactWrapper {

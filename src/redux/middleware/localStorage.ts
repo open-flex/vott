@@ -1,4 +1,4 @@
-import { Middleware, Dispatch, AnyAction, MiddlewareAPI } from "redux";
+import { AnyAction, Dispatch, Middleware, MiddlewareAPI } from "redux";
 
 export interface ILocalStorageMiddlewareOptions {
     paths: string[];

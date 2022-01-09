@@ -1,19 +1,19 @@
+import { mount, ReactWrapper } from "enzyme";
 import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router } from "react-router-dom";
-import { mount, ReactWrapper } from "enzyme";
 import { AnyAction, Store } from "redux";
-import ExportPage, { IExportPageProps } from "./exportPage";
+import MockFactory from "../../../../common/mockFactory";
 import { IApplicationState, IProject } from "../../../../models/applicationState";
+import { ExportProviderFactory } from "../../../../providers/export/exportProviderFactory";
 import IProjectActions, * as projectActions from "../../../../redux/actions/projectActions";
 import createReduxStore from "../../../../redux/store/store";
-import MockFactory from "../../../../common/mockFactory";
+import ProjectService from "../../../../services/projectService";
+import ExportPage, { IExportPageProps } from "./exportPage";
 
 jest.mock("../../../../services/projectService");
-import ProjectService from "../../../../services/projectService";
 
 jest.mock("../../../../providers/export/exportProviderFactory");
-import { ExportProviderFactory } from "../../../../providers/export/exportProviderFactory";
 
 describe("Export Page", () => {
     const exportProviderRegistrations = MockFactory.createExportProviderRegistrations();

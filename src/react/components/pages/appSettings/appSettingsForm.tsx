@@ -1,13 +1,13 @@
 import React from "react";
-import { strings, addLocValues } from "../../../../common/strings";
-import Form, { FormValidation, Widget } from "react-jsonschema-form";
-import { ObjectFieldTemplate } from "../../common/objectField/objectFieldTemplate";
-import CustomFieldTemplate from "../../common/customField/customFieldTemplate";
-import { ArrayFieldTemplate } from "../../common/arrayField/arrayFieldTemplate";
-import { IAppSettings } from "../../../../models/applicationState";
-import { ProtectedInput } from "../../common/protectedInput/protectedInput";
-import { CustomField } from "../../common/customField/customField";
+import Form, { FormValidation } from "react-jsonschema-form";
 import { generateKey } from "../../../../common/crypto";
+import { addLocValues, strings } from "../../../../common/strings";
+import { IAppSettings } from "../../../../models/applicationState";
+import { ArrayFieldTemplate } from "../../common/arrayField/arrayFieldTemplate";
+import { CustomField } from "../../common/customField/customField";
+import CustomFieldTemplate from "../../common/customField/customFieldTemplate";
+import { ObjectFieldTemplate } from "../../common/objectField/objectFieldTemplate";
+import { ProtectedInput } from "../../common/protectedInput/protectedInput";
 // tslint:disable-next-line:no-var-requires
 const formSchema = addLocValues(require("./appSettingsForm.json"));
 // tslint:disable-next-line:no-var-requires

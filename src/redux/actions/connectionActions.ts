@@ -1,9 +1,8 @@
-import shortid from "shortid";
-import { IConnection } from "../../models/applicationState";
-import { ActionTypes } from "./actionTypes";
-import { IPayloadAction, createPayloadAction } from "./actionCreators";
 import { Dispatch } from "redux";
+import { IConnection } from "../../models/applicationState";
 import ConnectionService from "../../services/connectionService";
+import { createPayloadAction, IPayloadAction } from "./actionCreators";
+import { ActionTypes } from "./actionTypes";
 
 /**
  * Actions to be performed in relation to connections

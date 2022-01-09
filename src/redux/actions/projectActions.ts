@@ -1,20 +1,15 @@
 import { Action, Dispatch } from "redux";
-import ProjectService from "../../services/projectService";
-import { ActionTypes } from "./actionTypes";
-import { AssetService } from "../../services/assetService";
-import { ExportProviderFactory } from "../../providers/export/exportProviderFactory";
-import {
-    AppError,
-    ErrorCode,
-    IApplicationState,
-    IAsset,
-    IAssetMetadata,
-    IProject,
-} from "../../models/applicationState";
-import { createAction, createPayloadAction, IPayloadAction } from "./actionCreators";
-import { IExportResults } from "../../providers/export/exportProvider";
 import { appInfo } from "../../common/appInfo";
 import { strings } from "../../common/strings";
+import {
+    AppError, ErrorCode, IApplicationState, IAsset, IAssetMetadata, IProject
+} from "../../models/applicationState";
+import { IExportResults } from "../../providers/export/exportProvider";
+import { ExportProviderFactory } from "../../providers/export/exportProviderFactory";
+import { AssetService } from "../../services/assetService";
+import ProjectService from "../../services/projectService";
+import { createAction, createPayloadAction, IPayloadAction } from "./actionCreators";
+import { ActionTypes } from "./actionTypes";
 
 /**
  * Actions to be performed in relation to projects

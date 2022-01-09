@@ -1,7 +1,7 @@
+import { mount, ReactWrapper } from "enzyme";
 import React from "react";
-import { ISecurityTokenPickerProps, SecurityTokenPicker } from "./securityTokenPicker";
-import { ReactWrapper, mount } from "enzyme";
 import MockFactory from "../../../../common/mockFactory";
+import { ISecurityTokenPickerProps, SecurityTokenPicker } from "./securityTokenPicker";
 
 describe("Security Token Picker", () => {
     const onChangeHandler = jest.fn();

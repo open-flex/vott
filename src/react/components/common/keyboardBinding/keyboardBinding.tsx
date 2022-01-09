@@ -1,5 +1,5 @@
-import { KeyboardContext, IKeyboardContext, KeyEventType } from "../keyboardManager/keyboardManager";
 import React from "react";
+import { IKeyboardContext, KeyboardContext, KeyEventType } from "../keyboardManager/keyboardManager";
 
 /**
  * Properties needed for a keyboard binding

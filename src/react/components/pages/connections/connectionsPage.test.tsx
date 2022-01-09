@@ -3,6 +3,7 @@ import React from "react";
 import Form from "react-jsonschema-form";
 import { Provider } from "react-redux";
 import { Link, NavLink, Route, StaticRouter as Router } from "react-router-dom";
+import { toast } from "react-toastify";
 import { AnyAction, Store } from "redux";
 import MockFactory from "../../../../common/mockFactory";
 import { IApplicationState, IConnection } from "../../../../models/applicationState";
@@ -16,7 +17,6 @@ import CondensedList from "../../common/condensedList/condensedList";
 import ConnectionForm from "./connectionForm";
 import ConnectionItem from "./connectionItem";
 import ConnectionPage, { IConnectionPageProps } from "./connectionsPage";
-import { toast } from "react-toastify";
 
 describe("Connections Page", () => {
     const connectionsRoute: string = "/connections";

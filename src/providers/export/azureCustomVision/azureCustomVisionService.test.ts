@@ -1,9 +1,9 @@
-import shortid from "shortid";
 import axios, { AxiosResponse } from "axios";
-import {
-    AzureCustomVisionService, IAzureCustomVisionServiceOptions, IAzureCustomVisionProject, IAzureCustomVisionImage,
-} from "./azureCustomVisionService";
+import shortid from "shortid";
 import MockFactory from "../../../common/mockFactory";
+import {
+    AzureCustomVisionService, IAzureCustomVisionImage, IAzureCustomVisionProject, IAzureCustomVisionServiceOptions
+} from "./azureCustomVisionService";
 
 describe("Azure Custom Vision Service", () => {
     let customVisionService: AzureCustomVisionService;

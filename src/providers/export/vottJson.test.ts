@@ -1,21 +1,21 @@
 import _ from "lodash";
-import { VottJsonExportProvider, IVottJsonExportProviderOptions } from "./vottJson";
+import { appInfo } from "../../common/appInfo";
+import { constants } from "../../common/constants";
+import HtmlFileReader from "../../common/htmlFileReader";
+import MockFactory from "../../common/mockFactory";
+import { AssetState, IAssetMetadata, IProject } from "../../models/applicationState";
+import registerMixins from "../../registerMixins";
 import registerProviders from "../../registerProviders";
+import { AssetService } from "../../services/assetService";
+import { AssetProviderFactory } from "../storage/assetProviderFactory";
+import { LocalFileSystemProxy } from "../storage/localFileSystemProxy";
 import { ExportAssetState } from "./exportProvider";
 import { ExportProviderFactory } from "./exportProviderFactory";
-import { IProject, IAssetMetadata, AssetState } from "../../models/applicationState";
-import MockFactory from "../../common/mockFactory";
+import { IVottJsonExportProviderOptions, VottJsonExportProvider } from "./vottJson";
 
 jest.mock("../../services/assetService");
-import { AssetService } from "../../services/assetService";
 
 jest.mock("../storage/localFileSystemProxy");
-import { LocalFileSystemProxy } from "../storage/localFileSystemProxy";
-import { constants } from "../../common/constants";
-import registerMixins from "../../registerMixins";
-import HtmlFileReader from "../../common/htmlFileReader";
-import { appInfo } from "../../common/appInfo";
-import { AssetProviderFactory } from "../storage/assetProviderFactory";
 
 registerMixins();
 

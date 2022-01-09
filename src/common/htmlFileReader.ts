@@ -1,8 +1,8 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { IAsset, AssetType, IFileInfo } from "../models/applicationState";
-import Guard from "./guard";
-import { TFRecordsReader } from "../providers/export/tensorFlowRecords/tensorFlowReader";
+import { AssetType, IAsset, IFileInfo } from "../models/applicationState";
 import { FeatureType } from "../providers/export/tensorFlowRecords/tensorFlowBuilder";
+import { TFRecordsReader } from "../providers/export/tensorFlowRecords/tensorFlowReader";
+import Guard from "./guard";
 
 /**
  * Helper class for reading HTML files

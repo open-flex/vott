@@ -4,9 +4,10 @@ import { RegionData, RegionDataType } from "vott-ct/lib/js/CanvasTools/Core/Regi
 import { Tag } from "vott-ct/lib/js/CanvasTools/Core/Tag";
 import { TagsDescriptor } from "vott-ct/lib/js/CanvasTools/Core/TagsDescriptor";
 import Guard from "../../../../common/guard";
-import { IBoundingBox, IRegion, ITag, RegionType,
-    IPoint, AppError, ErrorCode } from "../../../../models/applicationState";
 import { strings } from "../../../../common/strings";
+import {
+    AppError, ErrorCode, IBoundingBox, IPoint, IRegion, ITag, RegionType
+} from "../../../../models/applicationState";
 
 /**
  * Static functions to assist in operations within Canvas component

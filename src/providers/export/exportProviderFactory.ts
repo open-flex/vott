@@ -1,6 +1,6 @@
 import Guard from "../../common/guard";
-import { IExportProvider } from "./exportProvider";
 import { IProject } from "../../models/applicationState";
+import { IExportProvider } from "./exportProvider";
 
 export interface IExportProviderRegistrationOptions {
     name: string;

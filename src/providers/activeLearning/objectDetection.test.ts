@@ -1,8 +1,8 @@
 import * as tf from "@tensorflow/tfjs";
-jest.mock("../storage/localFileSystemProxy");
-import { LocalFileSystemProxy } from "../storage/localFileSystemProxy";
-import { ObjectDetection, DetectedObject } from "./objectDetection";
 import { strings } from "../../common/strings";
+import { LocalFileSystemProxy } from "../storage/localFileSystemProxy";
+import { ObjectDetection } from "./objectDetection";
+jest.mock("../storage/localFileSystemProxy");
 // tslint:disable-next-line:no-var-requires
 const modelJson = require("../../../cocoSSDModel/model.json");
 

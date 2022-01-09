@@ -1,17 +1,17 @@
-import { shallow, mount, ReactWrapper } from "enzyme";
-
+import { mount, ReactWrapper, shallow } from "enzyme";
 import React from "react";
-import { Route, StaticRouter as Router } from "react-router-dom";
-
 import { Provider } from "react-redux";
+import { Route, StaticRouter as Router } from "react-router-dom";
 import { AnyAction, Store } from "redux";
 import createReduxStore from "../../../redux/store/store";
-
-import MainContentRouter from "./mainContentRouter";
-import HomePage, { IHomePageProps } from "./../pages/homepage/homePage";
+import { IApplicationState } from "./../../../models/applicationState";
 import SettingsPage from "./../pages/appSettings/appSettingsPage";
 import ConnectionsPage from "./../pages/connections/connectionsPage";
-import { IApplicationState } from "./../../../models/applicationState";
+import HomePage, { IHomePageProps } from "./../pages/homepage/homePage";
+import MainContentRouter from "./mainContentRouter";
+
+
+
 
 describe("Main Content Router", () => {
     const badRoute: string = "/index.html";

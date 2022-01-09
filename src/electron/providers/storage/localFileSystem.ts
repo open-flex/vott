@@ -2,11 +2,10 @@ import { BrowserWindow, dialog } from "electron";
 import fs from "fs";
 import path from "path";
 import rimraf from "rimraf";
-import { IStorageProvider } from "../../../providers/storage/storageProviderFactory";
-import { IAsset, AssetType, StorageType, IConnection } from "../../../models/applicationState";
-import { AssetService } from "../../../services/assetService";
 import { strings } from "../../../common/strings";
-import { ILocalFileSystemProxyOptions } from "../../../providers/storage/localFileSystemProxy";
+import { AssetType, IAsset, StorageType } from "../../../models/applicationState";
+import { IStorageProvider } from "../../../providers/storage/storageProviderFactory";
+import { AssetService } from "../../../services/assetService";
 
 export default class LocalFileSystem implements IStorageProvider {
     public storageType: StorageType.Local;

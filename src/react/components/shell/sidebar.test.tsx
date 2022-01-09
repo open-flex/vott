@@ -1,8 +1,8 @@
-import React from "react";
-import Sidebar from "./sidebar";
-import { BrowserRouter as Router } from "react-router-dom";
 import { mount } from "enzyme";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import { IProject } from "../../../models/applicationState";
+import Sidebar from "./sidebar";
 
 describe("Sidebar Component", () => {
     it("renders correctly", () => {

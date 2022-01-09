@@ -1,5 +1,5 @@
-import React from "react";
 import { mount, ReactWrapper } from "enzyme";
+import React from "react";
 import Alert, { IAlertProps, IAlertState } from "./alert";
 
 describe("Alert component", () => {

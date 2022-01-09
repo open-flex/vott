@@ -1,5 +1,5 @@
-import { createContentBoundingBox, createLandscapeBoundingBox, createPortraitBoundingBox } from "./layout";
 import { IGenericContentSource } from "../react/components/common/assetPreview/assetPreview";
+import { createContentBoundingBox, createLandscapeBoundingBox, createPortraitBoundingBox } from "./layout";
 
 describe("Layout Utils", () => {
     describe("createLandscapeBoundingBox", () => {

@@ -1,17 +1,17 @@
+import { dialog } from "electron";
 import fs from "fs";
-import path, { relative, sep } from "path";
-import shortid from "shortid";
-import LocalFileSystem from "./localFileSystem";
 import mockFs from "mock-fs";
-import { AssetService } from "../../../services/assetService";
+import path, { sep } from "path";
+import shortid from "shortid";
 import registerMixins from "../../../registerMixins";
+import { AssetService } from "../../../services/assetService";
+import LocalFileSystem from "./localFileSystem";
 
 jest.mock("electron", () => ({
     dialog: {
         showOpenDialogSync: jest.fn(),
     },
 }));
-import { dialog } from "electron";
 
 registerMixins();
 

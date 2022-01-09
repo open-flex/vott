@@ -1,10 +1,9 @@
 import { Action, Dispatch } from "redux";
-import { IpcRendererProxy } from "../../common/ipcRendererProxy";
-import { ActionTypes } from "./actionTypes";
-import { createPayloadAction, createAction, IPayloadAction } from "./actionCreators";
-import { IAppSettings } from "../../models/applicationState";
-import { IProject, IApplicationState } from "../../models/applicationState";
 import { generateKey } from "../../common/crypto";
+import { IpcRendererProxy } from "../../common/ipcRendererProxy";
+import { IApplicationState, IAppSettings, IProject } from "../../models/applicationState";
+import { createAction, createPayloadAction, IPayloadAction } from "./actionCreators";
+import { ActionTypes } from "./actionTypes";
 
 /**
  * Actions to make changes to application settings

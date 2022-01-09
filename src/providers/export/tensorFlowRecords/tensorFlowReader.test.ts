@@ -1,4 +1,4 @@
-import { TFRecordsBuilder, FeatureType } from "./tensorFlowBuilder";
+import { FeatureType, TFRecordsBuilder } from "./tensorFlowBuilder";
 import { TFRecordsReader } from "./tensorFlowReader";
 
 describe("TFRecords Reader/Builder Integration test", () => {

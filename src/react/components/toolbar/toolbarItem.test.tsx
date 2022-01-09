@@ -1,10 +1,10 @@
-import React from "react";
-import { ToolbarItem, IToolbarItemProps, ToolbarItemType } from "./toolbarItem";
 import { mount, ReactWrapper } from "enzyme";
+import React from "react";
 import MockFactory from "../../../common/mockFactory";
+import { ToolbarItemGroup, ToolbarItemName } from "../../../registerToolbar";
 import { KeyboardBinding } from "../common/keyboardBinding/keyboardBinding";
 import { KeyboardManager } from "../common/keyboardManager/keyboardManager";
-import { ToolbarItemGroup, ToolbarItemName } from "../../../registerToolbar";
+import { IToolbarItemProps, ToolbarItem, ToolbarItemType } from "./toolbarItem";
 
 describe("Toolbar Item", () => {
     let onClickHandler = jest.fn();

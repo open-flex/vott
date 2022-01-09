@@ -1,7 +1,7 @@
-import { IAssetProvider, IAssetProviderRegistrationOptions } from "./assetProviderFactory";
 import Guard from "../../common/guard";
-import { IConnection, StorageType } from "../../models/applicationState";
 import getHostProcess, { HostProcessType } from "../../common/hostProcess";
+import { IConnection, StorageType } from "../../models/applicationState";
+import { IAssetProvider, IAssetProviderRegistrationOptions } from "./assetProviderFactory";
 
 /**
  * Interface for all VoTT Storage Providers

@@ -1,29 +1,27 @@
-import shortid from "shortid";
 import _ from "lodash";
-import {
-    AzureCustomVisionProvider, IAzureCustomVisionExportOptions,
-    NewOrExisting, AzureRegion,
-} from "./azureCustomVision";
-import registerProviders from "../../registerProviders";
-import { ExportProviderFactory } from "./exportProviderFactory";
+import shortid from "shortid";
+import { appInfo } from "../../common/appInfo";
+import HtmlFileReader from "../../common/htmlFileReader";
 import MockFactory from "../../common/mockFactory";
 import {
-    IProject, AssetState, IAsset, IAssetMetadata,
-    RegionType, IRegion, IExportProviderOptions,
+    AssetState, IAsset, IAssetMetadata, IExportProviderOptions, IProject, IRegion, RegionType
 } from "../../models/applicationState";
-import { ExportAssetState } from "./exportProvider";
-jest.mock("./azureCustomVision/azureCustomVisionService");
+import registerMixins from "../../registerMixins";
+import registerProviders from "../../registerProviders";
+import { AssetService } from "../../services/assetService";
+import { AssetProviderFactory } from "../storage/assetProviderFactory";
 import {
-    AzureCustomVisionService, IAzureCustomVisionProject,
-    IAzureCustomVisionImage, IAzureCustomVisionTag,
+    AzureCustomVisionProvider, AzureRegion, IAzureCustomVisionExportOptions,
+    NewOrExisting
+} from "./azureCustomVision";
+import {
+    AzureCustomVisionService, IAzureCustomVisionImage, IAzureCustomVisionProject, IAzureCustomVisionTag
 } from "./azureCustomVision/azureCustomVisionService";
+import { ExportAssetState } from "./exportProvider";
+import { ExportProviderFactory } from "./exportProviderFactory";
+jest.mock("./azureCustomVision/azureCustomVisionService");
 
 jest.mock("../../services/assetService");
-import { AssetService } from "../../services/assetService";
-import HtmlFileReader from "../../common/htmlFileReader";
-import registerMixins from "../../registerMixins";
-import { appInfo } from "../../common/appInfo";
-import { AssetProviderFactory } from "../storage/assetProviderFactory";
 
 registerMixins();
 

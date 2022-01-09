@@ -1,23 +1,20 @@
 import _ from "lodash";
-import { PascalVOCExportProvider, IPascalVOCExportProviderOptions } from "./pascalVOC";
-import { ExportAssetState } from "./exportProvider";
-import registerProviders from "../../registerProviders";
-import { ExportProviderFactory } from "./exportProviderFactory";
-import {
-    IAssetMetadata, AssetState, IRegion,
-    RegionType, IPoint, IExportProviderOptions,
-} from "../../models/applicationState";
+import { appInfo } from "../../common/appInfo";
+import HtmlFileReader from "../../common/htmlFileReader";
 import MockFactory from "../../common/mockFactory";
+import { AssetState, IAssetMetadata } from "../../models/applicationState";
+import registerMixins from "../../registerMixins";
+import registerProviders from "../../registerProviders";
+import { AssetService } from "../../services/assetService";
+import { AssetProviderFactory } from "../storage/assetProviderFactory";
+import { LocalFileSystemProxy } from "../storage/localFileSystemProxy";
+import { ExportAssetState } from "./exportProvider";
+import { ExportProviderFactory } from "./exportProviderFactory";
+import { IPascalVOCExportProviderOptions, PascalVOCExportProvider } from "./pascalVOC";
 
 jest.mock("../../services/assetService");
-import { AssetService } from "../../services/assetService";
 
 jest.mock("../storage/localFileSystemProxy");
-import { LocalFileSystemProxy } from "../storage/localFileSystemProxy";
-import registerMixins from "../../registerMixins";
-import HtmlFileReader from "../../common/htmlFileReader";
-import { appInfo } from "../../common/appInfo";
-import { AssetProviderFactory } from "../storage/assetProviderFactory";
 
 registerMixins();
 

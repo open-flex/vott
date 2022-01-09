@@ -1,9 +1,8 @@
-import _ from "lodash";
-import { ExportProvider } from "./exportProvider";
-import { IProject, IExportProviderOptions } from "../../models/applicationState";
+import json2csv, { Parser } from "json2csv";
 import Guard from "../../common/guard";
 import HtmlFileReader from "../../common/htmlFileReader";
-import json2csv, { Parser } from "json2csv";
+import { IExportProviderOptions, IProject } from "../../models/applicationState";
+import { ExportProvider } from "./exportProvider";
 
 /**
  * Options for CSV Export Provider

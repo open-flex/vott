@@ -1,11 +1,11 @@
 import _ from "lodash";
-import { ExportProvider } from "./exportProvider";
-import { IProject, IAssetMetadata, ITag, IExportProviderOptions } from "../../models/applicationState";
+import os from "os";
 import Guard from "../../common/guard";
 import HtmlFileReader from "../../common/htmlFileReader";
-import { itemTemplate, annotationTemplate, objectTemplate } from "./pascalVOC/pascalVOCTemplates";
 import { interpolate } from "../../common/strings";
-import os from "os";
+import { IAssetMetadata, IExportProviderOptions, IProject, ITag } from "../../models/applicationState";
+import { ExportProvider } from "./exportProvider";
+import { annotationTemplate, itemTemplate, objectTemplate } from "./pascalVOC/pascalVOCTemplates";
 import { splitTestAsset } from "./testAssetsSplitHelper";
 
 interface IObjectInfo {

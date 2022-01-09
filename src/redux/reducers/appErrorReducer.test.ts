@@ -1,8 +1,8 @@
-import { reducer } from "./appErrorReducer";
-import { IAppError, ErrorCode } from "../../models/applicationState";
-import { clearErrorAction, showErrorAction } from "../actions/appErrorActions";
-import { anyOtherAction } from "../actions/actionCreators";
 import MockFactory from "../../common/mockFactory";
+import { ErrorCode, IAppError } from "../../models/applicationState";
+import { anyOtherAction } from "../actions/actionCreators";
+import { clearErrorAction, showErrorAction } from "../actions/appErrorActions";
+import { reducer } from "./appErrorReducer";
 
 describe("AppError Reducer", () => {
     let state: IAppError;

@@ -1,10 +1,9 @@
-import React from "react";
 import { mount, ReactWrapper } from "enzyme";
-import { KeyboardManager, IKeyboardContext } from "./keyboardManager";
-import { KeyEventType } from "./keyboardManager";
+import React from "react";
+import { IKeyboardContext, KeyboardManager, KeyEventType } from "./keyboardManager";
+import { KeyboardRegistrationManager } from "./keyboardRegistrationManager";
 
 jest.mock("./keyboardRegistrationManager");
-import { KeyboardRegistrationManager } from "./keyboardRegistrationManager";
 
 describe("Keyboard Manager Component", () => {
     const registrationManagerMock = KeyboardRegistrationManager as jest.Mocked<typeof KeyboardRegistrationManager>;

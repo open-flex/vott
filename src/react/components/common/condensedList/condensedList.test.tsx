@@ -1,7 +1,7 @@
+import { mount } from "enzyme";
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import CondensedList from "./condensedList";
-import { mount } from "enzyme";
 
 const TestComponent = ({ item, onClick, onDelete }) => {
     return (

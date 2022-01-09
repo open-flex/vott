@@ -1,6 +1,6 @@
+import { IProject, IProviderOptions, ISecureString, ISecurityToken } from "../models/applicationState";
+import { decryptObject, encryptObject } from "./crypto";
 import Guard from "./guard";
-import { IProject, ISecurityToken, IProviderOptions, ISecureString } from "../models/applicationState";
-import { encryptObject, decryptObject } from "./crypto";
 
 /**
  * Generates a random integer in provided range

@@ -1,15 +1,15 @@
-import React, { KeyboardEvent, RefObject } from "react";
-import ReactDOM from "react-dom";
 import Align from "rc-align";
+import React, { KeyboardEvent } from "react";
+import ReactDOM from "react-dom";
+import { toast } from "react-toastify";
+import { strings } from "../../../../common/strings";
 import { randomIntInRange } from "../../../../common/utils";
 import { IRegion, ITag } from "../../../../models/applicationState";
 import { ColorPicker } from "../colorPicker";
-import "./tagInput.scss";
 import "../condensedList/condensedList.scss";
-import TagInputItem, { ITagInputItemProps, ITagClickProps } from "./tagInputItem";
+import "./tagInput.scss";
+import TagInputItem, { ITagClickProps, ITagInputItemProps } from "./tagInputItem";
 import TagInputToolbar from "./tagInputToolbar";
-import { toast } from "react-toastify";
-import { strings } from "../../../../common/strings";
 // tslint:disable-next-line:no-var-requires
 const tagColors = require("../../common/tagColors.json");
 

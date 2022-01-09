@@ -1,10 +1,7 @@
-import { IStorageProvider } from "./storageProviderFactory";
-import { IAsset, AssetType, StorageType } from "../../models/applicationState";
+import { Aborter, AnonymousCredential, BlockBlobURL, ContainerURL, Credential, ServiceURL, StorageURL, TokenCredential } from "@azure/storage-blob";
+import { AssetType, IAsset, StorageType } from "../../models/applicationState";
 import { AssetService } from "../../services/assetService";
-import {
-    TokenCredential, AnonymousCredential, ContainerURL,
-    StorageURL, ServiceURL, Credential, Aborter, BlockBlobURL,
-} from "@azure/storage-blob";
+import { IStorageProvider } from "./storageProviderFactory";
 
 /**
  * Options for Azure Cloud Storage

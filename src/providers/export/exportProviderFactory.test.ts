@@ -1,7 +1,7 @@
-import { ExportProviderFactory } from "./exportProviderFactory";
-import { ExportProvider } from "./exportProvider";
-import { IProject } from "../../models/applicationState";
 import MockFactory from "../../common/mockFactory";
+import { IProject } from "../../models/applicationState";
+import { ExportProvider } from "./exportProvider";
+import { ExportProviderFactory } from "./exportProviderFactory";
 
 describe("Export Provider Factory", () => {
     const testProject: IProject = MockFactory.createTestProject("TestProject");

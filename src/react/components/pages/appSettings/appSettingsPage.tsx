@@ -1,15 +1,15 @@
 import React from "react";
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import IApplicationActions, * as applicationActions from "../../../../redux/actions/applicationActions";
-import { IApplicationState, IAppSettings } from "../../../../models/applicationState";
-import "./appSettingsPage.scss";
-import { strings } from "../../../../common/strings";
-import { AppSettingsForm } from "./appSettingsForm";
 import { RouteComponentProps } from "react-router-dom";
 import { toast } from "react-toastify";
+import { bindActionCreators } from "redux";
 import { appInfo } from "../../../../common/appInfo";
 import { isElectron } from "../../../../common/hostProcess";
+import { strings } from "../../../../common/strings";
+import { IApplicationState, IAppSettings } from "../../../../models/applicationState";
+import IApplicationActions, * as applicationActions from "../../../../redux/actions/applicationActions";
+import { AppSettingsForm } from "./appSettingsForm";
+import "./appSettingsPage.scss";
 
 /**
  * Props for App Settings Page

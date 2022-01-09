@@ -1,10 +1,10 @@
+import { mount, ReactWrapper } from "enzyme";
 import React from "react";
-import { IAssetProps } from "./assetPreview";
-import { ReactWrapper, mount } from "enzyme";
-import { TFRecordAsset, ITFRecordState } from "./tfrecordAsset";
-import MockFactory from "../../../../common/mockFactory";
-import { TFRecordsBuilder, FeatureType } from "../../../../providers/export/tensorFlowRecords/tensorFlowBuilder";
 import HtmlFileReader from "../../../../common/htmlFileReader";
+import MockFactory from "../../../../common/mockFactory";
+import { FeatureType, TFRecordsBuilder } from "../../../../providers/export/tensorFlowRecords/tensorFlowBuilder";
+import { IAssetProps } from "./assetPreview";
+import { ITFRecordState, TFRecordAsset } from "./tfrecordAsset";
 
 describe("TFRecord Asset Component", () => {
     // tslint:disable-next-line:max-line-length

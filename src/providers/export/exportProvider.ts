@@ -1,12 +1,11 @@
+import _ from "lodash";
 import Guard from "../../common/guard";
 import {
-    IProject, IExportFormat, IAssetMetadata, IAsset,
-    AssetState, AssetType, IExportProviderOptions,
+    AssetState, AssetType, IAsset, IAssetMetadata, IExportFormat, IExportProviderOptions, IProject
 } from "../../models/applicationState";
-import { IStorageProvider, StorageProviderFactory } from "../storage/storageProviderFactory";
-import { IAssetProvider, AssetProviderFactory } from "../storage/assetProviderFactory";
-import _ from "lodash";
 import { AssetService } from "../../services/assetService";
+import { AssetProviderFactory, IAssetProvider } from "../storage/assetProviderFactory";
+import { IStorageProvider, StorageProviderFactory } from "../storage/storageProviderFactory";
 
 /**
  * @name - TF Pascal VOC Records Export Asset State

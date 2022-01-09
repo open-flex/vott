@@ -1,12 +1,12 @@
-import { ExportProvider, ExportAssetState } from "./exportProvider";
-import { IProject, AssetState, AssetType, IExportProviderOptions, IAsset } from "../../models/applicationState";
-import { ExportProviderFactory } from "./exportProviderFactory";
-import MockFactory from "../../common/mockFactory";
-import registerProviders from "../../registerProviders";
 import _ from "lodash";
+import MockFactory from "../../common/mockFactory";
+import { AssetState, IAsset, IProject } from "../../models/applicationState";
 import registerMixins from "../../registerMixins";
-import { AssetProviderFactory } from "../storage/assetProviderFactory";
+import registerProviders from "../../registerProviders";
 import { AssetService } from "../../services/assetService";
+import { AssetProviderFactory } from "../storage/assetProviderFactory";
+import { ExportAssetState, ExportProvider } from "./exportProvider";
+import { ExportProviderFactory } from "./exportProviderFactory";
 
 registerMixins();
 

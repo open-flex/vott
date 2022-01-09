@@ -1,7 +1,7 @@
-import React from "react";
 import { mount, ReactWrapper } from "enzyme";
-import { ProtectedInput, IProtectedInputProps, IProtectedInputState } from "./protectedInput";
+import React from "react";
 import { generateKey } from "../../../../common/crypto";
+import { IProtectedInputProps, IProtectedInputState, ProtectedInput } from "./protectedInput";
 
 describe("Protected Input Component", () => {
     const onChangeHandler = jest.fn();

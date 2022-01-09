@@ -1,39 +1,38 @@
 import shortid from "shortid";
+import { Point2D } from "vott-ct/lib/js/CanvasTools/Core/Point2D";
+import { RegionData, RegionDataType } from "vott-ct/lib/js/CanvasTools/Core/RegionData";
+import { SelectionMode } from "vott-ct/lib/js/CanvasTools/Interface/ISelectorSettings";
 import {
-    AssetState, AssetType, IApplicationState, IAppSettings, IAsset, IAssetMetadata,
-    IConnection, IExportFormat, IProject, ITag, StorageType, ISecurityToken,
-    EditorMode, IAppError, IProjectVideoSettings, ErrorCode,
-    IPoint, IRegion, RegionType, ModelPathType,
+    AssetState, AssetType, EditorMode, ErrorCode, IAppError, IApplicationState, IAppSettings, IAsset,
+    IAssetMetadata, IConnection, IExportFormat, IProject, IProjectVideoSettings, IRegion, ISecurityToken,
+    ITag, ModelPathType, RegionType, StorageType
 } from "../models/applicationState";
 import { IV1Project, IV1Region } from "../models/v1Models";
+import {
+    IAzureCustomVisionRegion, IAzureCustomVisionTag
+} from "../providers/export/azureCustomVision/azureCustomVisionService";
 import { ExportAssetState } from "../providers/export/exportProvider";
+import { IExportProviderRegistrationOptions } from "../providers/export/exportProviderFactory";
 import { IAssetProvider, IAssetProviderRegistrationOptions } from "../providers/storage/assetProviderFactory";
 import { IAzureCloudStorageOptions } from "../providers/storage/azureBlobStorage";
-import { IStorageProvider, IStorageProviderRegistrationOptions } from "../providers/storage/storageProviderFactory";
-import { IExportProviderRegistrationOptions } from "../providers/export/exportProviderFactory";
-import { IProjectSettingsPageProps } from "../react/components/pages/projectSettings/projectSettingsPage";
-import IConnectionActions from "../redux/actions/connectionActions";
-import IProjectActions, * as projectActions from "../redux/actions/projectActions";
-import { IProjectService } from "../services/projectService";
-import Canvas, { ICanvasProps } from "../react/components/pages/editorPage/canvas";
-import { IBingImageSearchOptions, BingImageSearchAspectRatio } from "../providers/storage/bingImageSearch";
-import { IEditorPageProps } from "../react/components/pages/editorPage/editorPage";
-import {
-    IAzureCustomVisionTag, IAzureCustomVisionRegion,
-} from "../providers/export/azureCustomVision/azureCustomVisionService";
-import IApplicationActions, * as applicationActions from "../redux/actions/applicationActions";
+import { BingImageSearchAspectRatio, IBingImageSearchOptions } from "../providers/storage/bingImageSearch";
 import { ILocalFileSystemProxyOptions } from "../providers/storage/localFileSystemProxy";
-import { generateKey } from "./crypto";
-import { AssetService } from "../services/assetService";
-import { Point2D } from "vott-ct/lib/js/CanvasTools/Core/Point2D";
-import { RegionDataType, RegionData } from "vott-ct/lib/js/CanvasTools/Core/RegionData";
-import { randomIntInRange, encodeFileURI } from "./utils";
-import { appInfo } from "./appInfo";
-import { SelectionMode } from "vott-ct/lib/js/CanvasTools/Interface/ISelectorSettings";
+import { IStorageProvider, IStorageProviderRegistrationOptions } from "../providers/storage/storageProviderFactory";
 import { IKeyboardBindingProps } from "../react/components/common/keyboardBinding/keyboardBinding";
 import { KeyEventType } from "../react/components/common/keyboardManager/keyboardManager";
 import { IKeyboardRegistrations } from "../react/components/common/keyboardManager/keyboardRegistrationManager";
 import { IActiveLearningPageProps } from "../react/components/pages/activeLearning/activeLearningPage";
+import Canvas, { ICanvasProps } from "../react/components/pages/editorPage/canvas";
+import { IEditorPageProps } from "../react/components/pages/editorPage/editorPage";
+import { IProjectSettingsPageProps } from "../react/components/pages/projectSettings/projectSettingsPage";
+import IApplicationActions, * as applicationActions from "../redux/actions/applicationActions";
+import IConnectionActions from "../redux/actions/connectionActions";
+import IProjectActions, * as projectActions from "../redux/actions/projectActions";
+import { AssetService } from "../services/assetService";
+import { IProjectService } from "../services/projectService";
+import { appInfo } from "./appInfo";
+import { generateKey } from "./crypto";
+import { encodeFileURI, randomIntInRange } from "./utils";
 
 export default class MockFactory {
 

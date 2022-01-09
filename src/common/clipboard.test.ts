@@ -1,7 +1,5 @@
 import Clipboard from "./clipboard";
 import MockFactory from "./mockFactory";
-import { IProject } from "../models/applicationState";
-import { IAssetMetadata } from "vott-react";
 
 describe("Clipboard tests", () => {
 

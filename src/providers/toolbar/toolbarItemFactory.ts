@@ -1,6 +1,5 @@
-import _ from "lodash";
-import { IToolbarItemMetadata, ToolbarItem } from "../../react/components/toolbar/toolbarItem";
 import Guard from "../../common/guard";
+import { IToolbarItemMetadata, ToolbarItem } from "../../react/components/toolbar/toolbarItem";
 
 /**
  * Interface for registering toolbar items

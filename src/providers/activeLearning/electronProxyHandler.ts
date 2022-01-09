@@ -1,5 +1,5 @@
 import * as tfc from "@tensorflow/tfjs-core";
-import { LocalFileSystemProxy, ILocalFileSystemProxyOptions } from "../../providers/storage/localFileSystemProxy";
+import { ILocalFileSystemProxyOptions, LocalFileSystemProxy } from "../../providers/storage/localFileSystemProxy";
 
 export class ElectronProxyHandler implements tfc.io.IOHandler {
     protected readonly provider: LocalFileSystemProxy;

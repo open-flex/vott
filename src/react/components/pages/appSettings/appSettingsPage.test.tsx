@@ -1,17 +1,17 @@
+import { mount, ReactWrapper } from "enzyme";
 import React from "react";
 import { Provider } from "react-redux";
-import { AnyAction, Store } from "redux";
 import { BrowserRouter as Router } from "react-router-dom";
-import { ReactWrapper, mount } from "enzyme";
-import { IAppSettings, IApplicationState } from "../../../../models/applicationState";
-import IApplicationActions, * as applicationActions from "../../../../redux/actions/applicationActions";
-import AppSettingsPage, { IAppSettingsProps } from "./appSettingsPage";
+import { toast } from "react-toastify";
+import { AnyAction, Store } from "redux";
 import MockFactory from "../../../../common/mockFactory";
+import { IApplicationState, IAppSettings } from "../../../../models/applicationState";
+import IApplicationActions, * as applicationActions from "../../../../redux/actions/applicationActions";
 import createReduxStore from "../../../../redux/store/store";
 import { AppSettingsForm } from "./appSettingsForm";
+import AppSettingsPage, { IAppSettingsProps } from "./appSettingsPage";
 
 jest.mock("react-toastify");
-import { toast } from "react-toastify";
 
 describe("App Settings Page", () => {
     function createComponent(

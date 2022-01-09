@@ -1,13 +1,13 @@
-import React from "react";
 import { mount, ReactWrapper } from "enzyme";
 import _ from "lodash";
-import ConnectionProviderPicker, { IConnectionProviderPickerProps } from "./connectionProviderPicker";
+import React from "react";
 import MockFactory from "../../../../common/mockFactory";
+import { AssetProviderFactory } from "../../../../providers/storage/assetProviderFactory";
+import { StorageProviderFactory } from "../../../../providers/storage/storageProviderFactory";
+import ConnectionProviderPicker, { IConnectionProviderPickerProps } from "./connectionProviderPicker";
 
 jest.mock("../../../../providers/storage/storageProviderFactory");
-import { StorageProviderFactory } from "../../../../providers/storage/storageProviderFactory";
 jest.mock("../../../../providers/storage/assetProviderFactory");
-import { AssetProviderFactory } from "../../../../providers/storage/assetProviderFactory";
 
 describe("Connection Provider Picker", () => {
     const storageProviderRegistrations = MockFactory.createStorageProviderRegistrations();

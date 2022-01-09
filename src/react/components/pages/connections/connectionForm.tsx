@@ -1,15 +1,15 @@
-import React from "react";
-import Form, { Widget, IChangeEvent, FormValidation } from "react-jsonschema-form";
-import { IConnection } from "../../../../models/applicationState";
-import LocalFolderPicker from "../../common/localFolderPicker/localFolderPicker";
-import { strings, addLocValues } from "../../../../common/strings";
-import CustomFieldTemplate from "../../common/customField/customFieldTemplate";
-import ConnectionProviderPicker from "../../common/connectionProviderPicker/connectionProviderPicker";
-import { ProtectedInput } from "../../common/protectedInput/protectedInput";
 import Checkbox from "rc-checkbox";
 import "rc-checkbox/assets/index.css";
-import { CustomWidget } from "../../common/customField/customField";
+import React from "react";
+import Form, { FormValidation, IChangeEvent, Widget } from "react-jsonschema-form";
 import { isBrowser } from "../../../../common/hostProcess";
+import { addLocValues, strings } from "../../../../common/strings";
+import { IConnection } from "../../../../models/applicationState";
+import ConnectionProviderPicker from "../../common/connectionProviderPicker/connectionProviderPicker";
+import { CustomWidget } from "../../common/customField/customField";
+import CustomFieldTemplate from "../../common/customField/customFieldTemplate";
+import LocalFolderPicker from "../../common/localFolderPicker/localFolderPicker";
+import { ProtectedInput } from "../../common/protectedInput/protectedInput";
 // tslint:disable-next-line:no-var-requires
 const formSchema = addLocValues(require("./connectionForm.json"));
 // tslint:disable-next-line:no-var-requires

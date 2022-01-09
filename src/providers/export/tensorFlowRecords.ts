@@ -1,12 +1,12 @@
-import _ from "lodash";
 import CryptoJS from "crypto-js";
-import { ExportProvider } from "./exportProvider";
-import { IProject, IAssetMetadata, IExportProviderOptions } from "../../models/applicationState";
+import _ from "lodash";
 import Guard from "../../common/guard";
 import HtmlFileReader from "../../common/htmlFileReader";
-import { itemTemplate } from "./pascalVOC/pascalVOCTemplates";
 import { interpolate } from "../../common/strings";
-import { TFRecordsBuilder, FeatureType } from "./tensorFlowRecords/tensorFlowBuilder";
+import { IAssetMetadata, IExportProviderOptions, IProject } from "../../models/applicationState";
+import { ExportProvider } from "./exportProvider";
+import { itemTemplate } from "./pascalVOC/pascalVOCTemplates";
+import { FeatureType, TFRecordsBuilder } from "./tensorFlowRecords/tensorFlowBuilder";
 
 interface IImageInfo {
     width: number;

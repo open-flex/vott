@@ -1,12 +1,12 @@
-import React from "react";
 import { mount, ReactWrapper } from "enzyme";
+import React from "react";
+import { isBrowser } from "../../../../common/hostProcess";
 import MockFactory from "../../../../common/mockFactory";
 import ConnectionForm, { IConnectionFormProps, IConnectionFormState } from "./connectionForm";
 
 jest.mock("../../../../common/hostProcess", () => ({
     isBrowser: jest.fn(),
 }));
-import { isBrowser } from "../../../../common/hostProcess";
 
 describe("Connection Form", () => {
     const onSubmitHandler = jest.fn();

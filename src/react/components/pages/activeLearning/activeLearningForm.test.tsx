@@ -1,8 +1,8 @@
+import { mount, ReactWrapper } from "enzyme";
 import React from "react";
-import { IActiveLearningFormProps, ActiveLearningForm, IActiveLearningFormState } from "./activeLearningForm";
-import { ReactWrapper, mount } from "enzyme";
-import { ModelPathType, IActiveLearningSettings } from "../../../../models/applicationState";
 import Form from "react-jsonschema-form";
+import { IActiveLearningSettings, ModelPathType } from "../../../../models/applicationState";
+import { ActiveLearningForm, IActiveLearningFormProps, IActiveLearningFormState } from "./activeLearningForm";
 
 describe("Active Learning Form", () => {
     const onChangeHandler = jest.fn();

@@ -1,7 +1,7 @@
-import React from "react";
 import { mount, ReactWrapper } from "enzyme";
-import MessageBox, { IMessageBoxProps, IMessageBoxState } from "./messageBox";
+import React from "react";
 import { Button } from "reactstrap";
+import MessageBox, { IMessageBoxProps, IMessageBoxState } from "./messageBox";
 
 describe("MessageBox component", () => {
     const buttonSelectHandler = jest.fn();

@@ -1,6 +1,6 @@
-import { Dispatch, Action } from "redux";
+import { Action, Dispatch } from "redux";
 import { IAppError } from "../../models/applicationState";
-import { createPayloadAction, IPayloadAction, createAction } from "./actionCreators";
+import { createAction, createPayloadAction, IPayloadAction } from "./actionCreators";
 import { ActionTypes } from "./actionTypes";
 
 /**

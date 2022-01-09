@@ -1,10 +1,10 @@
+import { mount, ReactWrapper } from "enzyme";
 import React from "react";
-import { ReactWrapper, mount } from "enzyme";
-import { TagInput, ITagInputProps, ITagInputState } from "./tagInput";
 import MockFactory from "../../../../common/mockFactory";
 import { ITag } from "../../../../models/applicationState";
-import TagInputItem, { ITagInputItemProps } from "./tagInputItem";
 import { ColorPicker } from "../colorPicker";
+import { ITagInputProps, ITagInputState, TagInput } from "./tagInput";
+import TagInputItem, { ITagInputItemProps } from "./tagInputItem";
 
 describe("Tag Input Component", () => {
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { GithubPicker, CirclePicker } from "react-color";
+import { CirclePicker, GithubPicker } from "react-color";
 
 export interface IColorPickerProps {
     show: boolean;

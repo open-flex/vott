@@ -1,11 +1,6 @@
-import _ from "lodash";
-import {
-    IAssetMetadata, AssetState, IRegion,
-    RegionType, IPoint, IExportProviderOptions,
-} from "../../models/applicationState";
 import MockFactory from "../../common/mockFactory";
+import { AssetState } from "../../models/applicationState";
 import { splitTestAsset } from "./testAssetsSplitHelper";
-import { appInfo } from "../../common/appInfo";
 
 describe("splitTestAsset Helper tests", () => {
 

@@ -1,18 +1,13 @@
 import _ from "lodash";
-import { reducer } from "./currentProjectReducer";
-import { IProject, IAssetMetadata, AssetState, ITag } from "../../models/applicationState";
 import MockFactory from "../../common/mockFactory";
-import {
-    loadProjectAction,
-    saveProjectAction,
-    closeProjectAction,
-    deleteProjectAction,
-    loadProjectAssetsAction,
-    saveAssetMetadataAction,
-    loadAssetMetadataAction,
-} from "../actions/projectActions";
+import { AssetState, IAssetMetadata, IProject, ITag } from "../../models/applicationState";
 import { anyOtherAction } from "../actions/actionCreators";
 import { saveConnectionAction } from "../actions/connectionActions";
+import {
+    closeProjectAction, deleteProjectAction, loadAssetMetadataAction, loadProjectAction, loadProjectAssetsAction,
+    saveAssetMetadataAction
+} from "../actions/projectActions";
+import { reducer } from "./currentProjectReducer";
 
 describe("Current Project Reducer", () => {
     it("Load project sets current project state", () => {

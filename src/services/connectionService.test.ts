@@ -1,6 +1,6 @@
-import ConnectionService, { IConnectionService } from "./connectionService";
-import { AssetProviderFactory } from "../providers/storage/assetProviderFactory";
 import MockFactory from "../common/mockFactory";
+import { AssetProviderFactory } from "../providers/storage/assetProviderFactory";
+import ConnectionService, { IConnectionService } from "./connectionService";
 
 describe("Connection Service", () => {
     const connectionService: IConnectionService = new ConnectionService();

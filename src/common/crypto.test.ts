@@ -1,4 +1,4 @@
-import { generateKey, encrypt, decrypt, encryptObject, decryptObject } from "./crypto";
+import { decrypt, decryptObject, encrypt, encryptObject, generateKey } from "./crypto";
 
 describe("Crypto", () => {
     it("generates a key", () => {

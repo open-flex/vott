@@ -1,9 +1,8 @@
-import React, { Fragment } from "react";
-import Menu, { MenuItem, SubMenu, Divider } from "rc-menu";
+import Menu, { Divider, MenuItem, SubMenu } from "rc-menu";
+import React from "react";
 import { PlatformType } from "../../../common/hostProcess";
-import "./titleBar.scss";
 import { strings } from "../../../common/strings";
-import { HelpMenu } from "./helpMenu";
+import "./titleBar.scss";
 
 export interface ITitleBarProps extends React.Props<TitleBar> {
     icon?: string | JSX.Element;

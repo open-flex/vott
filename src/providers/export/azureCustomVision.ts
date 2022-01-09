@@ -1,15 +1,15 @@
 import _ from "lodash";
-import { ExportProvider, ExportAssetState, IExportResults } from "./exportProvider";
 import Guard from "../../common/guard";
+import HtmlFileReader from "../../common/htmlFileReader";
 import {
-    IProject, IExportFormat, IAssetMetadata,
-    IBoundingBox, ISize, IExportProviderOptions,
+    IAssetMetadata,
+    IBoundingBox, IExportFormat, IExportProviderOptions, IProject, ISize
 } from "../../models/applicationState";
 import {
-    AzureCustomVisionService, IAzureCustomVisionServiceOptions, IAzureCustomVisionProject,
-    IAzureCustomVisionTag, IAzureCustomVisionRegion,
+    AzureCustomVisionService, IAzureCustomVisionProject, IAzureCustomVisionRegion, IAzureCustomVisionServiceOptions,
+    IAzureCustomVisionTag
 } from "./azureCustomVision/azureCustomVisionService";
-import HtmlFileReader from "../../common/htmlFileReader";
+import { ExportAssetState, ExportProvider, IExportResults } from "./exportProvider";
 
 /**
  * Options for Azure Custom Vision Service

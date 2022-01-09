@@ -1,6 +1,6 @@
-import { IAsset, IConnection } from "../../models/applicationState";
 import Guard from "../../common/guard";
 import getHostProcess, { HostProcessType } from "../../common/hostProcess";
+import { IAsset, IConnection } from "../../models/applicationState";
 
 /**
  * Interface for VoTT Asset Providers

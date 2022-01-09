@@ -1,13 +1,13 @@
-import React from "react";
-import App from "./App";
-import { Provider } from "react-redux";
-import createReduxStore from "./redux/store/store";
-import initialState from "./redux/store/initialState";
-import { IApplicationState } from "./models//applicationState";
 import { mount } from "enzyme";
+import React from "react";
+import { Provider } from "react-redux";
 import { Router } from "react-router-dom";
-import { KeyboardManager } from "./react/components/common/keyboardManager/keyboardManager";
+import App from "./App";
+import { IApplicationState } from "./models//applicationState";
 import { ErrorHandler } from "./react/components/common/errorHandler/errorHandler";
+import { KeyboardManager } from "./react/components/common/keyboardManager/keyboardManager";
+import initialState from "./redux/store/initialState";
+import createReduxStore from "./redux/store/store";
 
 describe("App Component", () => {
     const defaultState: IApplicationState = initialState;

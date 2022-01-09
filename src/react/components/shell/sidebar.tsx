@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import ConditionalNavLink from "../common/conditionalNavLink/conditionalNavLink";
 import { strings } from "../../../common/strings";
+import ConditionalNavLink from "../common/conditionalNavLink/conditionalNavLink";
 
 /**
  * Side bar that remains visible throughout app experience

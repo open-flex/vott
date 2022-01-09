@@ -1,11 +1,11 @@
-import React from "react";
-import { IErrorHandlerProps, ErrorHandler } from "./errorHandler";
 import { mount, ReactWrapper } from "enzyme";
-import Alert from "../alert/alert";
-import { ErrorCode, IAppError, AppError } from "../../../../models/applicationState";
-import { strings } from "../../../../common/strings";
-jest.mock("../../../../common/environment");
+import React from "react";
 import { Env } from "../../../../common/environment";
+import { strings } from "../../../../common/strings";
+import { AppError, ErrorCode, IAppError } from "../../../../models/applicationState";
+import Alert from "../alert/alert";
+import { ErrorHandler, IErrorHandlerProps } from "./errorHandler";
+jest.mock("../../../../common/environment");
 
 describe("Error Handler Component", () => {
     const onErrorHandler = jest.fn();

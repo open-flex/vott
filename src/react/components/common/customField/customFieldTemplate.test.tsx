@@ -1,6 +1,6 @@
+import { mount, ReactWrapper } from "enzyme";
 import React from "react";
-import { FieldTemplateProps, Field } from "react-jsonschema-form";
-import { ReactWrapper, mount } from "enzyme";
+import { FieldTemplateProps } from "react-jsonschema-form";
 import CustomFieldTemplate from "./customFieldTemplate";
 
 describe("Custom Field Template Component", () => {

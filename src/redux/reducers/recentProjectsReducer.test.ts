@@ -1,9 +1,9 @@
-import { reducer } from "./recentProjectsReducer";
-import { IProject } from "../../models/applicationState";
 import MockFactory from "../../common/mockFactory";
-import { saveProjectAction, deleteProjectAction } from "../actions/projectActions";
-import { saveConnectionAction } from "../actions/connectionActions";
+import { IProject } from "../../models/applicationState";
 import { anyOtherAction } from "../actions/actionCreators";
+import { saveConnectionAction } from "../actions/connectionActions";
+import { deleteProjectAction, saveProjectAction } from "../actions/projectActions";
+import { reducer } from "./recentProjectsReducer";
 
 describe("Recent Projects Reducer", () => {
     it("Loading / Saving new project appends to the list", () => {

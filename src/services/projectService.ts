@@ -1,17 +1,16 @@
 import _ from "lodash";
 import shortid from "shortid";
-import { StorageProviderFactory } from "../providers/storage/storageProviderFactory";
-import {
-    IProject, ISecurityToken, AppError,
-    ErrorCode, ModelPathType, IActiveLearningSettings,
-} from "../models/applicationState";
-import Guard from "../common/guard";
-import { constants } from "../common/constants";
-import { ExportProviderFactory } from "../providers/export/exportProviderFactory";
-import { decryptProject, encryptProject } from "../common/utils";
-import packageJson from "../../package.json";
-import { ExportAssetState } from "../providers/export/exportProvider";
 import { IExportFormat } from "vott-react";
+import packageJson from "../../package.json";
+import { constants } from "../common/constants";
+import Guard from "../common/guard";
+import { decryptProject, encryptProject } from "../common/utils";
+import {
+    AppError, ErrorCode, IActiveLearningSettings, IProject, ISecurityToken, ModelPathType
+} from "../models/applicationState";
+import { ExportAssetState } from "../providers/export/exportProvider";
+import { ExportProviderFactory } from "../providers/export/exportProviderFactory";
+import { StorageProviderFactory } from "../providers/storage/storageProviderFactory";
 
 /**
  * Functions required for a project service

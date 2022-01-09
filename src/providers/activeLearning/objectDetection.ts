@@ -1,9 +1,9 @@
+import * as tf from "@tensorflow/tfjs";
 import axios from "axios";
 import * as shortid from "shortid";
-import * as tf from "@tensorflow/tfjs";
-import { ElectronProxyHandler } from "./electronProxyHandler";
-import { IRegion, RegionType } from "../../models/applicationState";
 import { strings } from "../../common/strings";
+import { IRegion, RegionType } from "../../models/applicationState";
+import { ElectronProxyHandler } from "./electronProxyHandler";
 
 // tslint:disable-next-line:interface-over-type-literal
 export type DetectedObject = {

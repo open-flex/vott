@@ -1,10 +1,9 @@
-import MockFactory from "../common/mockFactory";
 import packageJson from "../../package.json";
-import ImportService from "./importService";
-import { AssetState, RegionType, AssetType } from "../models/applicationState";
 import HtmlFileReader from "../common/htmlFileReader";
-import { IAsset } from "../models/applicationState";
+import MockFactory from "../common/mockFactory";
+import { AssetState, IAsset } from "../models/applicationState";
 import registerMixins from "../registerMixins";
+import ImportService from "./importService";
 jest.mock("../common/htmlFileReader");
 
 describe("Import Service", () => {

@@ -1,9 +1,9 @@
+import { mount, ReactWrapper } from "enzyme";
 import React from "react";
-import { ConnectionPicker, ConnectionPickerWithRouter, IConnectionPickerProps } from "./connectionPicker";
 import { BrowserRouter as Router } from "react-router-dom";
 import MockFactory from "../../../../common/mockFactory";
-import { mount, ReactWrapper } from "enzyme";
 import { IConnection } from "../../../../models/applicationState";
+import { ConnectionPicker, ConnectionPickerWithRouter, IConnectionPickerProps } from "./connectionPicker";
 
 describe("Connection Picker Component", () => {
     let wrapper: any = null;

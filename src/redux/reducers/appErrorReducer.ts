@@ -1,6 +1,6 @@
-import { ActionTypes } from "../actions/actionTypes";
-import { AnyAction } from "../actions/actionCreators";
 import { IAppError } from "../../models/applicationState";
+import { AnyAction } from "../actions/actionCreators";
+import { ActionTypes } from "../actions/actionTypes";
 
 /**
  * App Error Reducer

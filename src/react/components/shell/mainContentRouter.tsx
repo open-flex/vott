@@ -1,11 +1,11 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
-import HomePage from "../pages/homepage/homePage";
+import { Route, Switch } from "react-router-dom";
 import ActiveLearningPage from "../pages/activeLearning/activeLearningPage";
 import AppSettingsPage from "../pages/appSettings/appSettingsPage";
 import ConnectionPage from "../pages/connections/connectionsPage";
 import EditorPage from "../pages/editorPage/editorPage";
 import ExportPage from "../pages/export/exportPage";
+import HomePage from "../pages/homepage/homePage";
 import ProjectSettingsPage from "../pages/projectSettings/projectSettingsPage";
 
 /**
