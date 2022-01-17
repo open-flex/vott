@@ -87,9 +87,6 @@
         "postinstall": "electron-builder install-app-deps",
         "predebug": "npm run build && npm run webpack:dev"
     },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
     "browserslist": [
         ">0.2%",
         "not dead",

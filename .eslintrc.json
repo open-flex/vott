@@ -1,0 +1,11 @@
+{
+    "root": true,
+    "extends": ["react-app"],
+    "overrides": [{
+        "files": ["src/common/localization/*.ts?(x)"],
+        "rules": {
+            "no-template-curly-in-string": "off",
+            "no-multi-str": "off"
+        }
+    }]
+}
