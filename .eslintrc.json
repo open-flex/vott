@@ -1,11 +1,43 @@
 {
     "root": true,
-    "extends": ["react-app"],
-    "overrides": [{
-        "files": ["src/common/localization/*.ts?(x)"],
-        "rules": {
-            "no-template-curly-in-string": "off",
-            "no-multi-str": "off"
-        }
-    }]
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "react-app"
+    ],
+    "rules": {
+        "@typescript-eslint/interface-name-prefix": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/type-annotation-spacing": "off",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/member-delimiter-style": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "prefer-const": "off",
+        "no-useless-escape": "off",
+        "no-extra-boolean-cast": "off",
+        "no-async-promise-executor": "off",
+        "no-extend-native": "off",
+        "getter-return": "off",
+        "no-case-declarations": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "jsx-a11y/alt-text": "off",
+        "react/jsx-no-target-blank": "off",
+        "@typescript-eslint/no-useless-constructor": "off",
+        "dot-location": "off",
+        "no-template-curly-in-string": "off",
+        "no-multi-str": "off",
+        "import/first": "off",
+        "prefer-spread": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/camelcase": "off",
+        "no-new-func": "off",
+        "quotes": ["error", "double"],
+        "comma-dangle": ["error", "always-multiline"],
+        "object-curly-spacing": ["error", "always"],
+        "semi": ["error", "always"],
+        "no-multiple-empty-lines": ["error", { "max": 1 }]
+    }
 }
