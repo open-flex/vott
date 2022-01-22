@@ -18,7 +18,8 @@ win:
 linux:
   target:
     - snap
-publish: null
+publish:
+  provider: github
 electronVersion: 13.6.7
 extraFiles:
   - "cocoSSDModel"
