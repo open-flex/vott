@@ -20,7 +20,7 @@ export default function createReduxStore(
 
     if (useLocalStorage) {
         const localStorage = require("../middleware/localStorage");
-        const storage = localStorage.createLocalStorage({paths});
+        const storage = localStorage.createLocalStorage({ paths });
         middlewares = [
             ...middlewares,
             storage,

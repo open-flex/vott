@@ -2,12 +2,12 @@ import { Action } from "redux";
 import { ActionTypes } from "./actionTypes";
 import { IClearErrorAction, IShowAppErrorAction } from "./appErrorActions";
 import {
-    IEnsureSecurityTokenAction, IRefreshApplicationAction, ISaveAppSettingsAction, IToggleDevToolsAction
+    IEnsureSecurityTokenAction, IRefreshApplicationAction, ISaveAppSettingsAction, IToggleDevToolsAction,
 } from "./applicationActions";
 import { IDeleteConnectionAction, ILoadConnectionAction, ISaveConnectionAction } from "./connectionActions";
 import {
     ICloseProjectAction, IDeleteProjectAction, IExportProjectAction, ILoadAssetMetadataAction, ILoadProjectAction,
-    ILoadProjectAssetsAction, ISaveAssetMetadataAction, ISaveProjectAction
+    ILoadProjectAssetsAction, ISaveAssetMetadataAction, ISaveProjectAction,
 } from "./projectActions";
 
 /**

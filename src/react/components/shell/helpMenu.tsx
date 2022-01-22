@@ -24,12 +24,12 @@ export class HelpMenu extends React.Component<IHelpMenuProps, IHelpMenuState> {
 
     public render() {
         return (
-            <div className={"help-menu-button"} onClick={() => this.setState({show: true})}>
+            <div className={"help-menu-button"} onClick={() => this.setState({ show: true })}>
                 <i className={`fas ${this.icon}`}/>
                 <KeyboardBinding
                     displayName={strings.editorPage.help.title}
                     accelerators={["CmdOrCtrl+H", "CmdOrCtrl+h"]}
-                    handler={() => this.setState({show: !this.state.show})}
+                    handler={() => this.setState({ show: !this.state.show })}
                     icon={this.icon}
                     keyEventType={KeyEventType.KeyDown}
                 />
@@ -45,7 +45,7 @@ export class HelpMenu extends React.Component<IHelpMenuProps, IHelpMenuState> {
     }
 
     private onClose = () => {
-        this.setState({show: false});
+        this.setState({ show: false });
         if (this.props.onClose) {
             this.props.onClose();
         }

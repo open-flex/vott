@@ -52,7 +52,7 @@ describe("Alert component", () => {
     });
 
     it("Calls onClose handler when clicking positive button", () => {
-        const arg = {value: "test"};
+        const arg = { value: "test" };
         const wrapper = createComponent(defaultProps);
 
         wrapper.instance().open(arg);

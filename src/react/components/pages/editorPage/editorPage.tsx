@@ -11,7 +11,7 @@ import { strings } from "../../../../common/strings";
 import {
     AppError, AssetState, AssetType, EditorMode, ErrorCode, IAdditionalPageSettings, IApplicationState,
     IAppSettings, IAsset, IAssetMetadata, IProject, IRegion,
-    ISize, ITag
+    ISize, ITag,
 } from "../../../../models/applicationState";
 import { IToolbarItemRegistration, ToolbarItemFactory } from "../../../../providers/toolbar/toolbarItemFactory";
 import IApplicationActions, * as applicationActions from "../../../../redux/actions/applicationActions";

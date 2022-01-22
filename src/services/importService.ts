@@ -5,7 +5,7 @@ import HtmlFileReader from "../common/htmlFileReader";
 import { normalizeSlashes } from "../common/utils";
 import {
     AppError, AssetState, AssetType, ErrorCode, IAsset, IAssetMetadata, IConnection, IFileInfo, IProject,
-    IRegion, ITag, RegionType
+    IRegion, ITag, RegionType,
 } from "../models/applicationState";
 import { IV1Project, IV1Region } from "../models/v1Models";
 import { AssetService } from "./assetService";

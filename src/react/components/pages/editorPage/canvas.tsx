@@ -10,7 +10,7 @@ import { createContentBoundingBox } from "../../../../common/layout";
 import { strings } from "../../../../common/strings";
 import {
     EditorMode, IAssetMetadata,
-    IProject, IRegion, RegionType
+    IProject, IRegion, RegionType,
 } from "../../../../models/applicationState";
 import { AssetPreview, ContentSource } from "../../common/assetPreview/assetPreview";
 import Confirm from "../../common/confirm/confirm";

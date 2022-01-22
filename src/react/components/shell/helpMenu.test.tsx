@@ -4,7 +4,7 @@ import MockFactory from "../../../common/mockFactory";
 import { KeyboardManager } from "../common/keyboardManager/keyboardManager";
 import {
     IKeyboardRegistrations,
-    KeyboardRegistrationManager
+    KeyboardRegistrationManager,
 } from "../common/keyboardManager/keyboardRegistrationManager";
 import { HelpMenu, IHelpMenuProps } from "./helpMenu";
 jest.mock("../common/keyboardManager/keyboardRegistrationManager");
@@ -46,14 +46,14 @@ describe("Help Menu", () => {
         const wrapper = createComponent();
         wrapper.find("div.help-menu-button").simulate("click");
         await MockFactory.flushUi();
-        expect(wrapper.exists(`div.col-1.keybinding-icon.fas.test-icon-1`)).toBe(true);
+        expect(wrapper.exists("div.col-1.keybinding-icon.fas.test-icon-1")).toBe(true);
         expect(wrapper.find("div.col-4.keybinding-accelerator").first().text()).toEqual("A");
         expect(wrapper.find("div.col-6.keybinding-name").first().text()).toEqual("Binding 1");
     });
 
     it("Calls onClose handler when closed", () => {
         const onClose = jest.fn();
-        const wrapper = createComponent({onClose});
+        const wrapper = createComponent({ onClose });
         wrapper.find("div.help-menu-button").simulate("click");
         expect(wrapper.exists("div.modal-content")).toBe(true);
         wrapper.find("button.close").simulate("click");

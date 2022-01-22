@@ -11,7 +11,8 @@ export default interface IConnectionActions {
     loadConnection(connection: IConnection): Promise<IConnection>;
     saveConnection(connection: IConnection): Promise<IConnection>;
     deleteConnection(connection: IConnection): Promise<void>;
-}
+// eslint-disable-next-line semi
+};
 
 /**
  * Dispatches Load Connection action and resolves with IConnection

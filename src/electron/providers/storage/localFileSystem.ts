@@ -146,9 +146,9 @@ export default class LocalFileSystem implements IStorageProvider {
     public async getAssets(sourceConnectionFolderPath?: string, relativePath: boolean = false): Promise<IAsset[]> {
         const files = await this.listFiles(path.normalize(sourceConnectionFolderPath));
         return files.map((filePath) => AssetService.createAssetFromFilePath(
-                filePath,
-                undefined,
-                relativePath ? path.relative(sourceConnectionFolderPath, filePath) : filePath))
+            filePath,
+            undefined,
+            relativePath ? path.relative(sourceConnectionFolderPath, filePath) : filePath))
             .filter((asset) => asset.type !== AssetType.Unknown);
     }
 

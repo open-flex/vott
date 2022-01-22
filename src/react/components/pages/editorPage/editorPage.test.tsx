@@ -11,7 +11,7 @@ import { appInfo } from "../../../../common/appInfo";
 import MockFactory from "../../../../common/mockFactory";
 import {
     AssetState, EditorMode, IActiveLearningSettings, IApplicationState, IAsset, IAssetMetadata, IProject,
-    ISize, ModelPathType
+    ISize, ModelPathType,
 } from "../../../../models/applicationState";
 import { AssetProviderFactory } from "../../../../providers/storage/assetProviderFactory";
 import createReduxStore from "../../../../redux/store/store";

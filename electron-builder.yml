@@ -5,21 +5,21 @@ directories:
   buildResources: app-icons # this is where app-icons is store
 appId: io.openflex.vott
 productName: VoTT
-artifactName: '${productName}-${version}-${platform}.${ext}'
+artifactName: "${productName}-${version}-${platform}.${ext}"
 extends: null # need this otherwise it won't use the entry point we set in "main" in package.json
 files:
   - filter:
-      - build/  # copy this directory to the asar directory that electron-builder use to look for the main entry file
+      - build/ # copy this directory to the asar directory that electron-builder use to look for the main entry file
 mac:
   icon: app-icons/icon.icns
   target: dmg
-  identity: null  # don't sign the app
+  identity: null # don't sign the app
 win:
   icon: app-icons/icon.ico
 linux:
   target:
     - snap
 publish: null
-electronVersion: 13.6.6
+electronVersion: 13.6.7
 extraFiles:
   - "cocoSSDModel"

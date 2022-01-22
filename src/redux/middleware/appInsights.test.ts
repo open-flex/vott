@@ -14,12 +14,12 @@ describe("appInsights middleware", () => {
         const next = jest.fn();
         const invoke = (action) => appInsightsLogger(store)(next)(action);
 
-        return { store, next, invoke};
+        return { store, next, invoke };
     };
 
     it("calls trackReduxAction", () => {
         const { invoke } = create();
-        const action = { type: "TEST"};
+        const action = { type: "TEST" };
         invoke(action);
 
         expect(trackReduxAction).toHaveBeenCalledWith(action);

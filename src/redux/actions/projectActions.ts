@@ -2,7 +2,7 @@ import { Action, Dispatch } from "redux";
 import { appInfo } from "../../common/appInfo";
 import { strings } from "../../common/strings";
 import {
-    AppError, ErrorCode, IApplicationState, IAsset, IAssetMetadata, IProject
+    AppError, ErrorCode, IApplicationState, IAsset, IAssetMetadata, IProject,
 } from "../../models/applicationState";
 import { IExportResults } from "../../providers/export/exportProvider";
 import { ExportProviderFactory } from "../../providers/export/exportProviderFactory";
@@ -25,8 +25,8 @@ export default interface IProjectActions {
     saveAssetMetadata(project: IProject, assetMetadata: IAssetMetadata): Promise<IAssetMetadata>;
     updateProjectTag(project: IProject, oldTagName: string, newTagName: string): Promise<IAssetMetadata[]>;
     deleteProjectTag(project: IProject, tagName): Promise<IAssetMetadata[]>;
-}
-
+// eslint-disable-next-line semi
+};
 /**
  * Dispatches Load Project action and resolves with IProject
  * @param project - Project to load

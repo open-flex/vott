@@ -3,11 +3,11 @@ import Guard from "../../common/guard";
 import HtmlFileReader from "../../common/htmlFileReader";
 import {
     IAssetMetadata,
-    IBoundingBox, IExportFormat, IExportProviderOptions, IProject, ISize
+    IBoundingBox, IExportFormat, IExportProviderOptions, IProject, ISize,
 } from "../../models/applicationState";
 import {
     AzureCustomVisionService, IAzureCustomVisionProject, IAzureCustomVisionRegion, IAzureCustomVisionServiceOptions,
-    IAzureCustomVisionTag
+    IAzureCustomVisionTag,
 } from "./azureCustomVision/azureCustomVisionService";
 import { ExportAssetState, ExportProvider, IExportResults } from "./exportProvider";
 

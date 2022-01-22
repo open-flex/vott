@@ -2,7 +2,7 @@ import _ from "lodash";
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 import {
-    BigPlayButton, ControlBar, CurrentTimeDisplay, PlaybackRateMenuButton, Player, TimeDivider, VolumeMenuButton
+    BigPlayButton, ControlBar, CurrentTimeDisplay, PlaybackRateMenuButton, Player, TimeDivider, VolumeMenuButton,
 } from "video-react";
 import { strings } from "../../../../common/strings";
 import { AssetState, AssetType, IAsset } from "../../../../models/applicationState";

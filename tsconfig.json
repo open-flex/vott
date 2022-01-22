@@ -12,22 +12,12 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
-        "jsx": "preserve",
+        "jsx": "react",
         "experimentalDecorators": true,
-        "lib": [
-            "es2015",
-            "dom"
-        ],
-        "typeRoots": [
-            "./typings",
-            "./node_modules/@types"
-        ],
+        "lib": ["es2015", "dom"],
+        "typeRoots": ["./typings", "./node_modules/@types"],
+        "noFallthroughCasesInSwitch": true
     },
-    "include": [
-        "src"
-    ],
-    "exclude": [
-        "src/**/*.test.ts",
-        "src/**/*.test.tsx"
-    ]
+    "include": ["src"],
+    "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"]
 }

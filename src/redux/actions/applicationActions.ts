@@ -15,7 +15,8 @@ export default interface IApplicationActions {
     reloadApplication(): Promise<void>;
     saveAppSettings(appSettings: IAppSettings): IAppSettings;
     ensureSecurityToken(project: IProject): IAppSettings;
-}
+// eslint-disable-next-line semi
+};
 
 /**
  * Open or close dev tools

@@ -7,7 +7,7 @@ import { constants } from "../../../../common/constants";
 import { isElectron } from "../../../../common/hostProcess";
 import { interpolate, strings } from "../../../../common/strings";
 import {
-    AppError, ErrorCode, IApplicationState, IAppSettings, IAssetMetadata, IConnection, IFileInfo, IProject
+    AppError, ErrorCode, IApplicationState, IAppSettings, IAssetMetadata, IConnection, IFileInfo, IProject,
 } from "../../../../models/applicationState";
 import IApplicationActions, * as applicationActions from "../../../../redux/actions/applicationActions";
 import IProjectActions, * as projectActions from "../../../../redux/actions/projectActions";

@@ -2,7 +2,7 @@ import axios, { AxiosResponse } from "axios";
 import shortid from "shortid";
 import MockFactory from "../../../common/mockFactory";
 import {
-    AzureCustomVisionService, IAzureCustomVisionImage, IAzureCustomVisionProject, IAzureCustomVisionServiceOptions
+    AzureCustomVisionService, IAzureCustomVisionImage, IAzureCustomVisionProject, IAzureCustomVisionServiceOptions,
 } from "./azureCustomVisionService";
 
 describe("Azure Custom Vision Service", () => {

@@ -14,7 +14,7 @@ import { ActionTypes } from "../actions/actionTypes";
 export const reducer = (state: IAppError = null, action: AnyAction) => {
     switch (action.type) {
         case ActionTypes.SHOW_ERROR:
-            return {...action.payload};
+            return { ...action.payload };
         case ActionTypes.CLEAR_ERROR:
             return null;
         default:

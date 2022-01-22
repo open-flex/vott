@@ -4,7 +4,7 @@ import { generateKey } from "../common/crypto";
 import MockFactory from "../common/mockFactory";
 import * as utils from "../common/utils";
 import {
-    AssetState, IActiveLearningSettings, IExportFormat, IProject, ISecurityToken, ModelPathType
+    AssetState, IActiveLearningSettings, IExportFormat, IProject, ISecurityToken, ModelPathType,
 } from "../models/applicationState";
 import { ExportAssetState } from "../providers/export/exportProvider";
 import { ExportProviderFactory } from "../providers/export/exportProviderFactory";

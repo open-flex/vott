@@ -5,7 +5,7 @@ import { anyOtherAction } from "../actions/actionCreators";
 import { saveConnectionAction } from "../actions/connectionActions";
 import {
     closeProjectAction, deleteProjectAction, loadAssetMetadataAction, loadProjectAction, loadProjectAssetsAction,
-    saveAssetMetadataAction
+    saveAssetMetadataAction,
 } from "../actions/projectActions";
 import { reducer } from "./currentProjectReducer";
 

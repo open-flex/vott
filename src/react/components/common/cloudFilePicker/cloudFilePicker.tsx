@@ -96,7 +96,7 @@ export class CloudFilePicker extends React.Component<ICloudFilePickerProps, IClo
      * Open Cloud File Picker
      */
     public open(): void {
-        this.setState({isOpen: true});
+        this.setState({ isOpen: true });
     }
 
     /**

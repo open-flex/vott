@@ -7,12 +7,12 @@ import { chinesetw } from "./localization/zh-tw";
 import { addLocValues, IAppStrings, interpolate, interpolateJson, strings } from "./strings";
 
 const languages = [
-  "en",
-  "es",
-  "ja",
-  "tw",
-  "ko",
-  "ch",
+    "en",
+    "es",
+    "ja",
+    "tw",
+    "ko",
+    "ch",
 ];
 
 describe("Localization tests", () => {

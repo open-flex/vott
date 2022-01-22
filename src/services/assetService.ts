@@ -7,7 +7,7 @@ import Guard from "../common/guard";
 import HtmlFileReader from "../common/htmlFileReader";
 import { encodeFileURI } from "../common/utils";
 import {
-    AssetState, AssetType, IAsset, IAssetMetadata, IProject, IRegion, ITFRecordMetadata, RegionType
+    AssetState, AssetType, IAsset, IAssetMetadata, IProject, IRegion, ITFRecordMetadata, RegionType,
 } from "../models/applicationState";
 import { FeatureType } from "../providers/export/tensorFlowRecords/tensorFlowBuilder";
 import { TFRecordsReader } from "../providers/export/tensorFlowRecords/tensorFlowReader";
@@ -25,10 +25,7 @@ export class AssetService {
      * @param assetFilePath - filepath of asset
      * @param assetFileName - name of asset
      */
-    public static createAssetFromFilePath(
-            assetFilePath: string,
-            assetFileName?: string,
-            assetIdentifier?: string): IAsset {
+    public static createAssetFromFilePath(assetFilePath: string, assetFileName?: string, assetIdentifier?: string): IAsset {
         Guard.empty(assetFilePath);
         const normalizedPath = assetFilePath.toLowerCase();
 

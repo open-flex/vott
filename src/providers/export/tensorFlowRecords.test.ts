@@ -3,7 +3,7 @@ import HtmlFileReader from "../../common/htmlFileReader";
 import MockFactory from "../../common/mockFactory";
 import {
     AssetState, IAssetMetadata, IExportProviderOptions, IPoint, IRegion,
-    RegionType
+    RegionType,
 } from "../../models/applicationState";
 import registerMixins from "../../registerMixins";
 import registerProviders from "../../registerProviders";

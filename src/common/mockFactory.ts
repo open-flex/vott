@@ -5,11 +5,11 @@ import { SelectionMode } from "vott-ct/lib/js/CanvasTools/Interface/ISelectorSet
 import {
     AssetState, AssetType, EditorMode, ErrorCode, IAppError, IApplicationState, IAppSettings, IAsset,
     IAssetMetadata, IConnection, IExportFormat, IProject, IProjectVideoSettings, IRegion, ISecurityToken,
-    ITag, ModelPathType, RegionType, StorageType
+    ITag, ModelPathType, RegionType, StorageType,
 } from "../models/applicationState";
 import { IV1Project, IV1Region } from "../models/v1Models";
 import {
-    IAzureCustomVisionRegion, IAzureCustomVisionTag
+    IAzureCustomVisionRegion, IAzureCustomVisionTag,
 } from "../providers/export/azureCustomVision/azureCustomVisionService";
 import { ExportAssetState } from "../providers/export/exportProvider";
 import { IExportProviderRegistrationOptions } from "../providers/export/exportProviderFactory";

@@ -49,7 +49,7 @@ export function setUpAppInsights() {
         },
     };
 
-    appInsights = new ApplicationInsights({config});
+    appInsights = new ApplicationInsights({ config });
     appInsights.loadAppInsights();
 }
 

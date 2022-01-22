@@ -4,7 +4,7 @@ import { appInfo } from "../../common/appInfo";
 import HtmlFileReader from "../../common/htmlFileReader";
 import MockFactory from "../../common/mockFactory";
 import {
-    AssetState, IAsset, IAssetMetadata, IExportProviderOptions, IProject, IRegion, RegionType
+    AssetState, IAsset, IAssetMetadata, IExportProviderOptions, IProject, IRegion, RegionType,
 } from "../../models/applicationState";
 import registerMixins from "../../registerMixins";
 import registerProviders from "../../registerProviders";
@@ -12,10 +12,10 @@ import { AssetService } from "../../services/assetService";
 import { AssetProviderFactory } from "../storage/assetProviderFactory";
 import {
     AzureCustomVisionProvider, AzureRegion, IAzureCustomVisionExportOptions,
-    NewOrExisting
+    NewOrExisting,
 } from "./azureCustomVision";
 import {
-    AzureCustomVisionService, IAzureCustomVisionImage, IAzureCustomVisionProject, IAzureCustomVisionTag
+    AzureCustomVisionService, IAzureCustomVisionImage, IAzureCustomVisionProject, IAzureCustomVisionTag,
 } from "./azureCustomVision/azureCustomVisionService";
 import { ExportAssetState } from "./exportProvider";
 import { ExportProviderFactory } from "./exportProviderFactory";
@@ -284,7 +284,7 @@ describe("Azure Custom Vision Export Provider", () => {
             const getAssetBlobMock = HtmlFileReader.getAssetBlob as jest.Mock;
             HtmlFileReader.getAssetBlob = getAssetBlobMock
                 .mockImplementationOnce((asset: IAsset) => {
-                    if (asset.path === `file:C:/Desktop/asset1.jpg`) {
+                    if (asset.path === "file:C:/Desktop/asset1.jpg") {
                         return Promise.reject("Error downloading binary");
                     } else {
                         Promise.resolve(new Blob(["Some binary data"]));

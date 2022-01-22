@@ -91,7 +91,7 @@ describe("Test Detection on Fake Model", () => {
 
         const data = await model.detect(x, 1);
 
-        expect(data).toEqual([{bbox: [227, 227, 0, 0], class: strings.tags.warnings.unknownTagName, score: 1}]);
+        expect(data).toEqual([{ bbox: [227, 227, 0, 0], class: strings.tags.warnings.unknownTagName, score: 1 }]);
     });
 });
 

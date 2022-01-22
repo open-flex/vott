@@ -1,6 +1,6 @@
 import MockFactory from "./mockFactory";
 import {
-    createQueryString, decryptProject, encodeFileURI, encryptProject, normalizeSlashes, randomIntInRange
+    createQueryString, decryptProject, encodeFileURI, encryptProject, normalizeSlashes, randomIntInRange,
 } from "./utils";
 
 describe("Helper functions", () => {

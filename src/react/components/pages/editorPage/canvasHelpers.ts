@@ -6,7 +6,7 @@ import { TagsDescriptor } from "vott-ct/lib/js/CanvasTools/Core/TagsDescriptor";
 import Guard from "../../../../common/guard";
 import { strings } from "../../../../common/strings";
 import {
-    AppError, ErrorCode, IBoundingBox, IPoint, IRegion, ITag, RegionType
+    AppError, ErrorCode, IBoundingBox, IPoint, IRegion, ITag, RegionType,
 } from "../../../../models/applicationState";
 
 /**
@@ -178,8 +178,7 @@ export default class CanvasHelpers {
      * @param regions Regions to duplicate
      * @param others Other regions existing in the asset (used to not put region on top of other region)
      */
-    public static duplicateRegionsAndMove =
-            (regions: IRegion[], others: IRegion[], width: number, height: number): IRegion[] => {
+    public static duplicateRegionsAndMove = (regions: IRegion[], others: IRegion[], width: number, height: number): IRegion[] => {
         const result: IRegion[] = [];
         for (const region of regions) {
             const shiftCoordinates = CanvasHelpers.getShiftCoordinates(region.boundingBox, others, width, height);
@@ -249,8 +248,7 @@ export default class CanvasHelpers {
         return false;
     }
 
-    private static getShiftCoordinates =
-            (boundingBox: IBoundingBox, otherRegions: IRegion[], width: number, height: number): IPoint => {
+    private static getShiftCoordinates = (boundingBox: IBoundingBox, otherRegions: IRegion[], width: number, height: number): IPoint => {
         let x = boundingBox.left;
         let y = boundingBox.top;
 

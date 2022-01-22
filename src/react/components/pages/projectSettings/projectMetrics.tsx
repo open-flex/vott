@@ -1,14 +1,14 @@
 import _ from "lodash";
 import React from "react";
 import {
-    DiscreteColorLegend, Hint, HorizontalGridLines, Sunburst, VerticalBarSeries, XAxis, XYPlot, YAxis
+    DiscreteColorLegend, Hint, HorizontalGridLines, Sunburst, VerticalBarSeries, XAxis, XYPlot, YAxis,
 } from "react-vis";
 import "react-vis/dist/styles/plot.scss";
 import "react-vis/dist/styles/radial-chart.scss";
 import { interpolate, strings } from "../../../../common/strings";
 import {
     AssetState, IAsset, IAssetMetadata,
-    IProject, IRegion, ITag
+    IProject, IRegion, ITag,
 } from "../../../../models/applicationState";
 import { AssetService } from "../../../../services/assetService";
 import "./projectSettingsPage.scss";
@@ -174,7 +174,7 @@ export default class ProjectMetrics extends React.Component<IProjectMetricsProps
                 <h4>{strings.projectMetrics.assetsSectionTitle}</h4>
                 <p className="my-1">
                     {strings.projectMetrics.totalAssetCount}:
-                        <strong className="px-1 metric-total-asset-count">{sourceAssetCount}</strong><br />
+                    <strong className="px-1 metric-total-asset-count">{sourceAssetCount}</strong><br />
                 </p>
                 <div className="asset-chart">
                     <Sunburst

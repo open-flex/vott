@@ -11,8 +11,6 @@ import HomePage, { IHomePageProps } from "./../pages/homepage/homePage";
 import MainContentRouter from "./mainContentRouter";
 
 
-
-
 describe("Main Content Router", () => {
     const badRoute: string = "/index.html";
 

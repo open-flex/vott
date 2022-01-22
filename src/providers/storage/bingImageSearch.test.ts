@@ -3,7 +3,7 @@ import MD5 from "md5.js";
 import { AssetState, AssetType, IAsset } from "../../models/applicationState";
 import {
     BingImageSearch, BingImageSearchAspectRatio, BingImageSearchLicenseType, BingImageSearchSize,
-    IBingImageSearchOptions
+    IBingImageSearchOptions,
 } from "./bingImageSearch";
 
 describe("Bing Image Search", () => {

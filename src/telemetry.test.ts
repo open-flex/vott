@@ -29,7 +29,7 @@ describe("appInsights telemetry", () => {
             const spy = jest.spyOn(ApplicationInsights.prototype, "trackEvent");
             setUpAppInsights();
 
-            const action: Action = {type: "test"};
+            const action: Action = { type: "test" };
             trackReduxAction(action);
 
             expect(spy).toBeCalledWith({
@@ -86,7 +86,7 @@ describe("appInsights telemetry", () => {
             const spy = jest.spyOn(ApplicationInsights.prototype, "trackEvent");
             setUpAppInsights();
 
-            const action: Action = {type: "test"};
+            const action: Action = { type: "test" };
             trackReduxAction(action);
             expect(spy).not.toBeCalled();
         });

@@ -27,7 +27,7 @@ export class ColorPicker extends React.Component<IColorPickerProps> {
         return (
             <div className="color-picker">
                 <GithubPicker
-                    color={{hex: this.props.color}}
+                    color={{ hex: this.props.color }}
                     onChangeComplete={this.onChange}
                     colors={this.props.colors}
                     width={160}

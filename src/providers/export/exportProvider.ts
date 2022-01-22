@@ -1,7 +1,7 @@
 import _ from "lodash";
 import Guard from "../../common/guard";
 import {
-    AssetState, AssetType, IAsset, IAssetMetadata, IExportFormat, IExportProviderOptions, IProject
+    AssetState, AssetType, IAsset, IAssetMetadata, IExportFormat, IExportProviderOptions, IProject,
 } from "../../models/applicationState";
 import { AssetService } from "../../services/assetService";
 import { AssetProviderFactory, IAssetProvider } from "../storage/assetProviderFactory";

@@ -6,7 +6,7 @@ import { constants } from "../common/constants";
 import Guard from "../common/guard";
 import { decryptProject, encryptProject } from "../common/utils";
 import {
-    AppError, ErrorCode, IActiveLearningSettings, IProject, ISecurityToken, ModelPathType
+    AppError, ErrorCode, IActiveLearningSettings, IProject, ISecurityToken, ModelPathType,
 } from "../models/applicationState";
 import { ExportAssetState } from "../providers/export/exportProvider";
 import { ExportProviderFactory } from "../providers/export/exportProviderFactory";

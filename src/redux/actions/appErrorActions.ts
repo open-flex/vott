@@ -12,7 +12,8 @@ import { ActionTypes } from "./actionTypes";
 export default interface IAppErrorActions {
     showError(appError: IAppError): void;
     clearError(): void;
-}
+// eslint-disable-next-line semi
+};
 
 /**
  * show alert popup to indicate error
