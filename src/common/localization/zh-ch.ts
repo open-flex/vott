@@ -440,6 +440,9 @@ export const chinese: IAppStrings = {
             csv: {
                 displayName: "逗号分隔值 (CSV)", // Comma Separated Values (CSV)
             },
+            yolo: {
+                displayName: "Yolo",
+            },
         },
         messages: {
             saveSuccess: "成功保存导出设置", // Successfully saved export settings

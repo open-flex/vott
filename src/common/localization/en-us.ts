@@ -429,6 +429,9 @@ export const english: IAppStrings = {
             csv: {
                 displayName: "Comma Separated Values (CSV)",
             },
+            yolo: {
+                displayName: "Yolo",
+            },
         },
         messages: {
             saveSuccess: "Successfully saved export settings",

@@ -430,6 +430,9 @@ export interface IAppStrings {
             csv: {
                 displayName: string,
             },
+            yolo: {
+                displayName: string,
+            }
         },
         messages: {
             saveSuccess: string;

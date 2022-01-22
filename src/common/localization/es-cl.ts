@@ -432,6 +432,9 @@ export const spanish: IAppStrings = {
             csv: {
                 displayName: "Los valores separados por comas (CSV)",
             },
+            yolo: {
+                displayName: "Yolo",
+            },
         },
         messages: {
             saveSuccess: "Configuración de exportación guardada correctamente",

@@ -441,6 +441,9 @@ export const japanese: IAppStrings = {
             csv: {
                 displayName: "コンマ区切り値（CSV）", // Comma Separated Values (CSV)"
             },
+            yolo: {
+                displayName: "Yolo",
+            },
         },
         messages: {
             saveSuccess: "エクスポート設定を保存しました", // Successfully saved export settings"

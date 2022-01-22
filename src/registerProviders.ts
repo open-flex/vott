@@ -7,6 +7,7 @@ import { ExportProviderFactory } from "./providers/export/exportProviderFactory"
 import { PascalVOCExportProvider } from "./providers/export/pascalVOC";
 import { TFRecordsExportProvider } from "./providers/export/tensorFlowRecords";
 import { VottJsonExportProvider } from "./providers/export/vottJson";
+import { YoloExportProvider } from "./providers/export/yolo";
 import { AssetProviderFactory } from "./providers/storage/assetProviderFactory";
 import { AzureBlobStorage } from "./providers/storage/azureBlobStorage";
 import { BingImageSearch } from "./providers/storage/bingImageSearch";
@@ -79,6 +80,11 @@ export default function registerProviders() {
         name: "csv",
         displayName: strings.export.providers.csv.displayName,
         factory: (project, options) => new CsvExportProvider(project, options),
+    });
+    ExportProviderFactory.register({
+        name: "yolo",
+        displayName: strings.export.providers.yolo.displayName,
+        factory: (project, options) => new YoloExportProvider(project, options),
     });
 
     registerToolbar();
