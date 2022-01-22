@@ -147,5 +147,6 @@
     "engines": {
         "node": ">=14.18.2",
         "npm": ">=7.0.0"
-    }
+    },
+    "productName": "VoTT"
 }
