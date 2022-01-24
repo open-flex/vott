@@ -4,14 +4,19 @@ directories:
   output: releases
   buildResources: app-icons # this is where app-icons is store
 appId: io.openflex.vott
-artifactName: "${productName}-${version}-${platform}.${ext}"
+artifactName: "${productName}-${version}-${platform}-${arch}.${ext}"
 extends: null # need this otherwise it won't use the entry point we set in "main" in package.json
 files:
   - filter:
       - build/ # copy this directory to the asar directory that electron-builder use to look for the main entry file
 mac:
   icon: app-icons/icon.icns
-  target: dmg
+  target:
+    - target: dmg
+      arch:
+        - arm64
+        - x64
+        - universal
   identity: null # don't sign the app
 win:
   icon: app-icons/icon.ico
